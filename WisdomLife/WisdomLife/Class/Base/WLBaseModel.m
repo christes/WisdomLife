@@ -7,25 +7,25 @@
 //
 
 #import "WLBaseModel.h"
-#import "MJExtension.h"
 #import "NMFileCacheManager.h"
+#import "YYModel.h"
 @implementation WLBaseModel
-+ (NSDictionary *)replacedKeyFromPropertyName {
-    return @{@"ID" : @"id",
-             @"isNewVersion" : @"newVersion"};
+
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{@"responseID": @[@"id", @"ID"]};
 }
 
 + (NSMutableArray *)modelArrayWithDictArray:(NSArray *)response {
     if ([response isKindOfClass:[NSArray class]]) {
-        NSMutableArray *array = [self mj_objectArrayWithKeyValuesArray:response];
-        return array;
+        NSMutableArray *modelArray = [[NSArray yy_modelArrayWithClass:[self class] json:response] copy];
+        return modelArray;
     }
     return [NSMutableArray new];
 }
 
 + (id)modelWithDictionary:(NSDictionary *)dictionary {
     if ([dictionary isKindOfClass:[NSDictionary class]]) {
-        return [self mj_objectWithKeyValues:dictionary];
+        return [self yy_modelWithJSON:dictionary];
     }
     return [[self alloc] init];
 }
