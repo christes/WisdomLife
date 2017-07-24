@@ -10,13 +10,19 @@
 #import "WLMineCellModel.h"
 #import "WLMineViewCell.h"
 #import "WLMyMessageViewController.h"
+#import "WLMyWalletViewController.h"
+#import "WLShoppingCartViewController.h"
+#import "WLMyOrderViewController.h"
+#import "WLCardController.h"
 @interface WLMineViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *mine;
 @property (weak, nonatomic) IBOutlet UILabel *phoneNum;
 
 @property (weak, nonatomic) IBOutlet UIImageView *edit;
-/**  */
+/** 数组模型 */
 @property (nonatomic ,strong)NSArray <WLMineCellModel *> *modelArray;
+/** 跳转控制器数组 */
+@property (nonatomic ,strong)NSArray *controllerArray;
 @end
 
 @implementation WLMineViewController
@@ -53,21 +59,47 @@
     return  cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.row ==0) {
-    WLMyMessageViewController *myMessage = [[WLMyMessageViewController alloc] init];
-    myMessage.title = self.modelArray[indexPath.row].title;
-    [self.navigationController pushViewController:myMessage animated:YES];
-    }
-    else if (indexPath.row ==1){
-        UIViewController *myMessage1 = [[UIViewController alloc] init];
-        myMessage1.title = self.modelArray[indexPath.row].title;
-        [self.navigationController pushViewController:myMessage1 animated:YES];
-
+//          NSArray *array = @[@"WLMyMessageViewController",
+//                             @"WLMyWalletViewController",
+//                             @"WLCardController",
+//                             @"WLMyOrderViewController",
+//                             @"WLShoppingCartViewController"];
     
-    
-    }
+        UIViewController *VC = (UIViewController *)[NSClassFromString(self.controllerArray[indexPath.row]) new];
+       VC.title = self.modelArray[indexPath.row].title;
+    VC.hidesBottomBarWhenPushed = YES;
+      [self.navigationController pushViewController:VC animated:YES];
+//    if (indexPath.row ==0) {
+//    WLMyMessageViewController *myMessage = [[WLMyMessageViewController alloc] init];
+//    myMessage.title = self.modelArray[indexPath.row].title;
+//    [self.navigationController pushViewController:myMessage animated:YES];
+//    }
+//    else if (indexPath.row ==1){
+//        WLMyWalletViewController *myWallet = [[WLMyWalletViewController alloc] init];
+//        myWallet.title = self.modelArray[indexPath.row].title;
+//        [self.navigationController pushViewController:myWallet animated:YES];
+//    }
+//    else if (indexPath.row ==2){
+//        WLCardController *card = [[WLCardController alloc] init];
+//        card.title = self.modelArray[indexPath.row].title;
+//        [self.navigationController pushViewController:card animated:YES];
+//    }
+//    else if (indexPath.row ==3){
+//        WLMyOrderViewController *myOrder = [[WLMyOrderViewController alloc] init];
+//        myOrder.title = self.modelArray[indexPath.row].title;
+//        [self.navigationController pushViewController:myOrder animated:YES];
+//    }
+//    else  {
+//        WLShoppingCartViewController *shopping = [[WLShoppingCartViewController alloc] init];
+//        shopping.title = self.modelArray[indexPath.row].title;
+//        [self.navigationController pushViewController:shopping animated:YES];
+//    }
 }
+//- (void)pushToViewcontroller:(UIViewController *)controller didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    controller.title = self.modelArray[indexPath.row].title;
+//    [self.navigationController pushViewController:controller animated:YES];
+//}
+
 #pragma mark - - lazy load
 
 - (NSArray<WLMineCellModel *> *)modelArray{
@@ -86,6 +118,17 @@
         _modelArray = [WLMineCellModel modelArrayWithDictArray:array];
     }
     return _modelArray;
+}
+-(NSArray *)controllerArray{
+    if (!_controllerArray) {
+        _controllerArray = @[@"WLMyMessageViewController",
+                             @"WLMyWalletViewController",
+                             @"WLCardController",
+                             @"WLMyOrderViewController",
+                             @"WLShoppingCartViewController"];
+    }
+    return _controllerArray;
+
 }
 
 /*

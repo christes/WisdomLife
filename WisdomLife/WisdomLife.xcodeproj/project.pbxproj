@@ -80,10 +80,17 @@
 		8E1843E21F230CB40005A719 /* WLLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843E11F230CB40005A719 /* WLLifeViewController.m */; };
 		8E1843E91F2313B60005A719 /* WLCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843E81F2313B60005A719 /* WLCollectionViewController.m */; };
 		8E1843EC1F2314F60005A719 /* WLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843EB1F2314F60005A719 /* WLCollectionViewCell.m */; };
-		8E8C46841F258B040053AB43 /* WLMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46821F258B040053AB43 /* WLMyMessageViewController.m */; };
-		8E8C46851F258B040053AB43 /* WLMyMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E8C46831F258B040053AB43 /* WLMyMessageViewController.xib */; };
-		8E8C46881F25933E0053AB43 /* WLMyMessegeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46871F25933E0053AB43 /* WLMyMessegeViewCell.m */; };
-		8E8C468B1F25ACE20053AB43 /* WLMyMessegeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C468A1F25ACE20053AB43 /* WLMyMessegeModel.m */; };
+		8E8C46941F25CD9E0053AB43 /* WLMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C468E1F25CD9E0053AB43 /* WLMyMessageViewController.m */; };
+		8E8C46951F25CD9E0053AB43 /* WLMyMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E8C468F1F25CD9E0053AB43 /* WLMyMessageViewController.xib */; };
+		8E8C46961F25CD9E0053AB43 /* WLMyMessegeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46911F25CD9E0053AB43 /* WLMyMessegeModel.m */; };
+		8E8C46971F25CD9E0053AB43 /* WLMyMessegeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46931F25CD9E0053AB43 /* WLMyMessegeViewCell.m */; };
+		8E8C469F1F25CE8E0053AB43 /* WLMyWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C469D1F25CE8E0053AB43 /* WLMyWalletViewController.m */; };
+		8E8C46A01F25CE8E0053AB43 /* WLMyWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E8C469E1F25CE8E0053AB43 /* WLMyWalletViewController.xib */; };
+		8E8C46A31F25E7530053AB43 /* WLCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46A21F25E7530053AB43 /* WLCardController.m */; };
+		8E8C46A71F25E79A0053AB43 /* WLMyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46A51F25E79A0053AB43 /* WLMyOrderViewController.m */; };
+		8E8C46A81F25E79A0053AB43 /* WLMyOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E8C46A61F25E79A0053AB43 /* WLMyOrderViewController.xib */; };
+		8E8C46AC1F25E7C20053AB43 /* WLShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46AA1F25E7C20053AB43 /* WLShoppingCartViewController.m */; };
+		8E8C46AD1F25E7C20053AB43 /* WLShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E8C46AB1F25E7C20053AB43 /* WLShoppingCartViewController.xib */; };
 		8EB5810D1F2467B30097E34B /* WLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5810B1F2467B30097E34B /* WLMineViewController.m */; };
 		8EB5810E1F2467B30097E34B /* WLMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EB5810C1F2467B30097E34B /* WLMineViewController.xib */; };
 		8EB581111F248D3D0097E34B /* WLMineViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB581101F248D3D0097E34B /* WLMineViewCell.m */; };
@@ -245,13 +252,24 @@
 		8E1843E81F2313B60005A719 /* WLCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewController.m; sourceTree = "<group>"; };
 		8E1843EA1F2314F60005A719 /* WLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectionViewCell.h; sourceTree = "<group>"; };
 		8E1843EB1F2314F60005A719 /* WLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewCell.m; sourceTree = "<group>"; };
-		8E8C46811F258B040053AB43 /* WLMyMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyMessageViewController.h; sourceTree = "<group>"; };
-		8E8C46821F258B040053AB43 /* WLMyMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyMessageViewController.m; sourceTree = "<group>"; };
-		8E8C46831F258B040053AB43 /* WLMyMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMyMessageViewController.xib; sourceTree = "<group>"; };
-		8E8C46861F25933E0053AB43 /* WLMyMessegeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyMessegeViewCell.h; sourceTree = "<group>"; };
-		8E8C46871F25933E0053AB43 /* WLMyMessegeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyMessegeViewCell.m; sourceTree = "<group>"; };
-		8E8C46891F25ACE20053AB43 /* WLMyMessegeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyMessegeModel.h; sourceTree = "<group>"; };
-		8E8C468A1F25ACE20053AB43 /* WLMyMessegeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyMessegeModel.m; sourceTree = "<group>"; };
+		8E8C468D1F25CD9E0053AB43 /* WLMyMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyMessageViewController.h; sourceTree = "<group>"; };
+		8E8C468E1F25CD9E0053AB43 /* WLMyMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyMessageViewController.m; sourceTree = "<group>"; };
+		8E8C468F1F25CD9E0053AB43 /* WLMyMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMyMessageViewController.xib; sourceTree = "<group>"; };
+		8E8C46901F25CD9E0053AB43 /* WLMyMessegeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyMessegeModel.h; sourceTree = "<group>"; };
+		8E8C46911F25CD9E0053AB43 /* WLMyMessegeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyMessegeModel.m; sourceTree = "<group>"; };
+		8E8C46921F25CD9E0053AB43 /* WLMyMessegeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyMessegeViewCell.h; sourceTree = "<group>"; };
+		8E8C46931F25CD9E0053AB43 /* WLMyMessegeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyMessegeViewCell.m; sourceTree = "<group>"; };
+		8E8C469C1F25CE8E0053AB43 /* WLMyWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyWalletViewController.h; sourceTree = "<group>"; };
+		8E8C469D1F25CE8E0053AB43 /* WLMyWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyWalletViewController.m; sourceTree = "<group>"; };
+		8E8C469E1F25CE8E0053AB43 /* WLMyWalletViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMyWalletViewController.xib; sourceTree = "<group>"; };
+		8E8C46A11F25E7530053AB43 /* WLCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCardController.h; sourceTree = "<group>"; };
+		8E8C46A21F25E7530053AB43 /* WLCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCardController.m; sourceTree = "<group>"; };
+		8E8C46A41F25E79A0053AB43 /* WLMyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyOrderViewController.h; sourceTree = "<group>"; };
+		8E8C46A51F25E79A0053AB43 /* WLMyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyOrderViewController.m; sourceTree = "<group>"; };
+		8E8C46A61F25E79A0053AB43 /* WLMyOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMyOrderViewController.xib; sourceTree = "<group>"; };
+		8E8C46A91F25E7C20053AB43 /* WLShoppingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLShoppingCartViewController.h; sourceTree = "<group>"; };
+		8E8C46AA1F25E7C20053AB43 /* WLShoppingCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLShoppingCartViewController.m; sourceTree = "<group>"; };
+		8E8C46AB1F25E7C20053AB43 /* WLShoppingCartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLShoppingCartViewController.xib; sourceTree = "<group>"; };
 		8EB5810A1F2467B30097E34B /* WLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMineViewController.h; sourceTree = "<group>"; };
 		8EB5810B1F2467B30097E34B /* WLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMineViewController.m; sourceTree = "<group>"; };
 		8EB5810C1F2467B30097E34B /* WLMineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMineViewController.xib; sourceTree = "<group>"; };
@@ -593,7 +611,6 @@
 			children = (
 				8E1843D31F230B190005A719 /* WisdomLife */,
 				8E1841331F22FD630005A719 /* Base */,
-				8E18413E1F22FD630005A719 /* Main */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -601,6 +618,7 @@
 		8E1841331F22FD630005A719 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				8E18413E1F22FD630005A719 /* Main */,
 				8E1841341F22FD630005A719 /* NMBaseAPIModel.h */,
 				8E1841351F22FD630005A719 /* NMBaseAPIModel.m */,
 				8E1841361F22FD630005A719 /* WLBaseModel.h */,
@@ -623,7 +641,8 @@
 				8E1841431F22FD630005A719 /* NMTabBarVC.h */,
 				8E1841441F22FD630005A719 /* NMTabBarVC.m */,
 			);
-			path = Main;
+			name = Main;
+			path = ../Main;
 			sourceTree = "<group>";
 		};
 		8E18426D1F22FD630005A719 /* Helper */ = {
@@ -820,6 +839,11 @@
 		8E1843DB1F230C570005A719 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				8E8C46981F25CE0E0053AB43 /* 购物车 */,
+				8E8C46991F25CE0E0053AB43 /* 卡包 */,
+				8E8C469A1F25CE0E0053AB43 /* 我的订单 */,
+				8E8C469B1F25CE0E0053AB43 /* 我的钱包 */,
+				8E8C468C1F25CD9E0053AB43 /* 个人资料 */,
 				8EB5810A1F2467B30097E34B /* WLMineViewController.h */,
 				8EB5810B1F2467B30097E34B /* WLMineViewController.m */,
 				8EB5810C1F2467B30097E34B /* WLMineViewController.xib */,
@@ -827,13 +851,6 @@
 				8EB581101F248D3D0097E34B /* WLMineViewCell.m */,
 				8EB581191F24EFD40097E34B /* WLMineCellModel.h */,
 				8EB5811A1F24EFD40097E34B /* WLMineCellModel.m */,
-				8E8C46811F258B040053AB43 /* WLMyMessageViewController.h */,
-				8E8C46821F258B040053AB43 /* WLMyMessageViewController.m */,
-				8E8C46831F258B040053AB43 /* WLMyMessageViewController.xib */,
-				8E8C46861F25933E0053AB43 /* WLMyMessegeViewCell.h */,
-				8E8C46871F25933E0053AB43 /* WLMyMessegeViewCell.m */,
-				8E8C46891F25ACE20053AB43 /* WLMyMessegeModel.h */,
-				8E8C468A1F25ACE20053AB43 /* WLMyMessegeModel.m */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -858,6 +875,59 @@
 				8E010B0A1F23375200F3D323 /* WLAppIsNewVersionTool.m */,
 			);
 			path = "引导页";
+			sourceTree = "<group>";
+		};
+		8E8C468C1F25CD9E0053AB43 /* 个人资料 */ = {
+			isa = PBXGroup;
+			children = (
+				8E8C468D1F25CD9E0053AB43 /* WLMyMessageViewController.h */,
+				8E8C468E1F25CD9E0053AB43 /* WLMyMessageViewController.m */,
+				8E8C468F1F25CD9E0053AB43 /* WLMyMessageViewController.xib */,
+				8E8C46901F25CD9E0053AB43 /* WLMyMessegeModel.h */,
+				8E8C46911F25CD9E0053AB43 /* WLMyMessegeModel.m */,
+				8E8C46921F25CD9E0053AB43 /* WLMyMessegeViewCell.h */,
+				8E8C46931F25CD9E0053AB43 /* WLMyMessegeViewCell.m */,
+			);
+			path = "个人资料";
+			sourceTree = "<group>";
+		};
+		8E8C46981F25CE0E0053AB43 /* 购物车 */ = {
+			isa = PBXGroup;
+			children = (
+				8E8C46A91F25E7C20053AB43 /* WLShoppingCartViewController.h */,
+				8E8C46AA1F25E7C20053AB43 /* WLShoppingCartViewController.m */,
+				8E8C46AB1F25E7C20053AB43 /* WLShoppingCartViewController.xib */,
+			);
+			path = "购物车";
+			sourceTree = "<group>";
+		};
+		8E8C46991F25CE0E0053AB43 /* 卡包 */ = {
+			isa = PBXGroup;
+			children = (
+				8E8C46A11F25E7530053AB43 /* WLCardController.h */,
+				8E8C46A21F25E7530053AB43 /* WLCardController.m */,
+			);
+			path = "卡包";
+			sourceTree = "<group>";
+		};
+		8E8C469A1F25CE0E0053AB43 /* 我的订单 */ = {
+			isa = PBXGroup;
+			children = (
+				8E8C46A41F25E79A0053AB43 /* WLMyOrderViewController.h */,
+				8E8C46A51F25E79A0053AB43 /* WLMyOrderViewController.m */,
+				8E8C46A61F25E79A0053AB43 /* WLMyOrderViewController.xib */,
+			);
+			path = "我的订单";
+			sourceTree = "<group>";
+		};
+		8E8C469B1F25CE0E0053AB43 /* 我的钱包 */ = {
+			isa = PBXGroup;
+			children = (
+				8E8C469C1F25CE8E0053AB43 /* WLMyWalletViewController.h */,
+				8E8C469D1F25CE8E0053AB43 /* WLMyWalletViewController.m */,
+				8E8C469E1F25CE8E0053AB43 /* WLMyWalletViewController.xib */,
+			);
+			path = "我的钱包";
 			sourceTree = "<group>";
 		};
 		8EB581121F2493BD0097E34B /* 登录 */ = {
@@ -950,12 +1020,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8C46A81F25E79A0053AB43 /* WLMyOrderViewController.xib in Resources */,
 				8EB5810E1F2467B30097E34B /* WLMineViewController.xib in Resources */,
+				8E8C46AD1F25E7C20053AB43 /* WLShoppingCartViewController.xib in Resources */,
 				8E1840C71F22FCB20005A719 /* LaunchScreen.storyboard in Resources */,
 				8E1840C41F22FCB20005A719 /* Assets.xcassets in Resources */,
-				8E8C46851F258B040053AB43 /* WLMyMessageViewController.xib in Resources */,
-				8E1840C21F22FCB20005A719 /* Main.storyboard in Resources */,
 				8EB581181F2494110097E34B /* WLLoginViewController.xib in Resources */,
+				8E8C46A01F25CE8E0053AB43 /* WLMyWalletViewController.xib in Resources */,
+				8E8C46951F25CD9E0053AB43 /* WLMyMessageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1016,7 +1088,6 @@
 			files = (
 				8E010B0B1F23375200F3D323 /* WLAppIsNewVersionTool.m in Sources */,
 				8E1843121F22FD640005A719 /* NMBaseAPIModel.m in Sources */,
-				8E8C46881F25933E0053AB43 /* WLMyMessegeViewCell.m in Sources */,
 				8E1843E91F2313B60005A719 /* WLCollectionViewController.m in Sources */,
 				8E1843C61F22FD640005A719 /* NMViewRefreshStatusManager.m in Sources */,
 				8E1842F41F22FD640005A719 /* NSDictionary+Addition.m in Sources */,
@@ -1026,7 +1097,6 @@
 				8E1843061F22FD640005A719 /* UILabel+CountDown.m in Sources */,
 				8E1843A91F22FD640005A719 /* NSNull+Exception.m in Sources */,
 				8E1843A51F22FD640005A719 /* NSArray+NSRangeException.m in Sources */,
-				8E8C468B1F25ACE20053AB43 /* WLMyMessegeModel.m in Sources */,
 				8E1843131F22FD640005A719 /* WLBaseModel.m in Sources */,
 				8E1843D71F230BBB0005A719 /* WLHomeViewController.m in Sources */,
 				8E1843A61F22FD640005A719 /* NSDictionary+NSRangeException.m in Sources */,
@@ -1043,16 +1113,18 @@
 				8E1843051F22FD640005A719 /* UIImageView+LBBlurredImage.m in Sources */,
 				8E1843DF1F230CA00005A719 /* WLNearbyViewController.m in Sources */,
 				8E1842FB1F22FD640005A719 /* NSString+Encrypt.m in Sources */,
-				8E8C46841F258B040053AB43 /* WLMyMessageViewController.m in Sources */,
+				8E8C46941F25CD9E0053AB43 /* WLMyMessageViewController.m in Sources */,
 				8E1842F71F22FD640005A719 /* NSObject+GCD.m in Sources */,
 				8E1842F31F22FD640005A719 /* NSDate+Addition.m in Sources */,
 				8EB5810D1F2467B30097E34B /* WLMineViewController.m in Sources */,
 				8E1842F21F22FD640005A719 /* NSArray+Addition.m in Sources */,
 				8E1842F51F22FD640005A719 /* NSFileManager+Paths.m in Sources */,
 				8E1843AA1F22FD640005A719 /* NSObject+Swizzling.m in Sources */,
+				8E8C469F1F25CE8E0053AB43 /* WLMyWalletViewController.m in Sources */,
 				8E1843081F22FD640005A719 /* UINavigationBar+Addition.m in Sources */,
 				8E18439B1F22FD640005A719 /* NMAdjustPositionButton.m in Sources */,
 				8E1843B21F22FD640005A719 /* NMGradientLabel.m in Sources */,
+				8E8C46971F25CD9E0053AB43 /* WLMyMessegeViewCell.m in Sources */,
 				8E1842FA1F22FD640005A719 /* NSString+Category.m in Sources */,
 				8E1842F11F22FD640005A719 /* NMAPPContext.m in Sources */,
 				8E1842FD1F22FD640005A719 /* NSString+Size.m in Sources */,
@@ -1060,6 +1132,7 @@
 				8E18430F1F22FD640005A719 /* UIView+Tap.m in Sources */,
 				8E1843AE1F22FD640005A719 /* NMEmptyDataDataSource.m in Sources */,
 				8E1843171F22FD640005A719 /* NMNavigationVC.m in Sources */,
+				8E8C46961F25CD9E0053AB43 /* WLMyMessegeModel.m in Sources */,
 				8E1843E21F230CB40005A719 /* WLLifeViewController.m in Sources */,
 				8E18430D1F22FD640005A719 /* UIView+Frame.m in Sources */,
 				8E1843031F22FD640005A719 /* UIImage+ImageEffects.m in Sources */,
@@ -1075,9 +1148,12 @@
 				8E1843C91F22FD640005A719 /* NMConst.m in Sources */,
 				8E1840BC1F22FCB20005A719 /* AppDelegate.m in Sources */,
 				8E1843CE1F2304E60005A719 /* NMLoadingFailedView.m in Sources */,
+				8E8C46A31F25E7530053AB43 /* WLCardController.m in Sources */,
 				8E1843AC1F22FD640005A719 /* UINavigationController+Consistent.m in Sources */,
 				8E1843191F22FD640005A719 /* NMTabBarVC.m in Sources */,
 				8E1843EC1F2314F60005A719 /* WLCollectionViewCell.m in Sources */,
+				8E8C46A71F25E79A0053AB43 /* WLMyOrderViewController.m in Sources */,
+				8E8C46AC1F25E7C20053AB43 /* WLShoppingCartViewController.m in Sources */,
 				8E18430E1F22FD640005A719 /* UIView+Layer.m in Sources */,
 				8EB581111F248D3D0097E34B /* WLMineViewCell.m in Sources */,
 				8E1843111F22FD640005A719 /* UIViewController+NMAdd.m in Sources */,
