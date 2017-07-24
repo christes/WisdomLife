@@ -14,7 +14,7 @@
                 <outlet property="edit" destination="Xef-LC-QqN" id="dMJ-wd-BEJ"/>
                 <outlet property="mine" destination="fbz-XL-wRZ" id="sd0-e9-jum"/>
                 <outlet property="phoneNum" destination="tyh-ZH-NzP" id="Mxv-gg-ivf"/>
-                <outlet property="photo" destination="ZjQ-vO-kRs" id="nQT-Vl-L4C"/>
+                <outlet property="photo" destination="ZjQ-vO-kRs" id="a8B-fu-AZC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

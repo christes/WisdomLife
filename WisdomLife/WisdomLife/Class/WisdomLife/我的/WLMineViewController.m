@@ -9,20 +9,18 @@
 #import "WLMineViewController.h"
 #import "WLMineCellModel.h"
 #import "WLMineViewCell.h"
+#import "WLMyMessageViewController.h"
 @interface WLMineViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *mine;
 @property (weak, nonatomic) IBOutlet UILabel *phoneNum;
-@property (weak, nonatomic) IBOutlet UIImageView *photo;
+
 @property (weak, nonatomic) IBOutlet UIImageView *edit;
 /**  */
 @property (nonatomic ,strong)NSArray <WLMineCellModel *> *modelArray;
 @end
 
 @implementation WLMineViewController
-{
-    
-    ;
-}
+
 
 
 - (void)viewDidLoad {
@@ -53,13 +51,23 @@
     
     cell.model = self.modelArray[indexPath.row];
     return  cell;
-
-
-
-
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.row ==0) {
+    WLMyMessageViewController *myMessage = [[WLMyMessageViewController alloc] init];
+    myMessage.title = self.modelArray[indexPath.row].title;
+    [self.navigationController pushViewController:myMessage animated:YES];
+    }
+    else if (indexPath.row ==1){
+        UIViewController *myMessage1 = [[UIViewController alloc] init];
+        myMessage1.title = self.modelArray[indexPath.row].title;
+        [self.navigationController pushViewController:myMessage1 animated:YES];
 
-
+    
+    
+    }
+}
 #pragma mark - - lazy load
 
 - (NSArray<WLMineCellModel *> *)modelArray{

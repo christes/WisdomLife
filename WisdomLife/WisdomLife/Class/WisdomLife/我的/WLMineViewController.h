@@ -9,5 +9,5 @@
 #import "WLBaseVC.h"
 
 @interface WLMineViewController : WLBaseVC
-
+@property (strong, nonatomic) IBOutlet UIImageView *photo;
 @end

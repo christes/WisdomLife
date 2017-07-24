@@ -81,6 +81,10 @@
 		8E1843E21F230CB40005A719 /* WLLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843E11F230CB40005A719 /* WLLifeViewController.m */; };
 		8E1843E91F2313B60005A719 /* WLCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843E81F2313B60005A719 /* WLCollectionViewController.m */; };
 		8E1843EC1F2314F60005A719 /* WLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843EB1F2314F60005A719 /* WLCollectionViewCell.m */; };
+		8E8C46841F258B040053AB43 /* WLMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46821F258B040053AB43 /* WLMyMessageViewController.m */; };
+		8E8C46851F258B040053AB43 /* WLMyMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E8C46831F258B040053AB43 /* WLMyMessageViewController.xib */; };
+		8E8C46881F25933E0053AB43 /* WLMyMessegeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46871F25933E0053AB43 /* WLMyMessegeViewCell.m */; };
+		8E8C468B1F25ACE20053AB43 /* WLMyMessegeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C468A1F25ACE20053AB43 /* WLMyMessegeModel.m */; };
 		8EB5810D1F2467B30097E34B /* WLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5810B1F2467B30097E34B /* WLMineViewController.m */; };
 		8EB5810E1F2467B30097E34B /* WLMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EB5810C1F2467B30097E34B /* WLMineViewController.xib */; };
 		8EB581111F248D3D0097E34B /* WLMineViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB581101F248D3D0097E34B /* WLMineViewCell.m */; };
@@ -243,6 +247,13 @@
 		8E1843E81F2313B60005A719 /* WLCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewController.m; sourceTree = "<group>"; };
 		8E1843EA1F2314F60005A719 /* WLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectionViewCell.h; sourceTree = "<group>"; };
 		8E1843EB1F2314F60005A719 /* WLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewCell.m; sourceTree = "<group>"; };
+		8E8C46811F258B040053AB43 /* WLMyMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyMessageViewController.h; sourceTree = "<group>"; };
+		8E8C46821F258B040053AB43 /* WLMyMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyMessageViewController.m; sourceTree = "<group>"; };
+		8E8C46831F258B040053AB43 /* WLMyMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMyMessageViewController.xib; sourceTree = "<group>"; };
+		8E8C46861F25933E0053AB43 /* WLMyMessegeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyMessegeViewCell.h; sourceTree = "<group>"; };
+		8E8C46871F25933E0053AB43 /* WLMyMessegeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyMessegeViewCell.m; sourceTree = "<group>"; };
+		8E8C46891F25ACE20053AB43 /* WLMyMessegeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyMessegeModel.h; sourceTree = "<group>"; };
+		8E8C468A1F25ACE20053AB43 /* WLMyMessegeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyMessegeModel.m; sourceTree = "<group>"; };
 		8EB5810A1F2467B30097E34B /* WLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMineViewController.h; sourceTree = "<group>"; };
 		8EB5810B1F2467B30097E34B /* WLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMineViewController.m; sourceTree = "<group>"; };
 		8EB5810C1F2467B30097E34B /* WLMineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMineViewController.xib; sourceTree = "<group>"; };
@@ -819,6 +830,13 @@
 				8EB581101F248D3D0097E34B /* WLMineViewCell.m */,
 				8EB581191F24EFD40097E34B /* WLMineCellModel.h */,
 				8EB5811A1F24EFD40097E34B /* WLMineCellModel.m */,
+				8E8C46811F258B040053AB43 /* WLMyMessageViewController.h */,
+				8E8C46821F258B040053AB43 /* WLMyMessageViewController.m */,
+				8E8C46831F258B040053AB43 /* WLMyMessageViewController.xib */,
+				8E8C46861F25933E0053AB43 /* WLMyMessegeViewCell.h */,
+				8E8C46871F25933E0053AB43 /* WLMyMessegeViewCell.m */,
+				8E8C46891F25ACE20053AB43 /* WLMyMessegeModel.h */,
+				8E8C468A1F25ACE20053AB43 /* WLMyMessegeModel.m */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -938,6 +956,7 @@
 				8EB5810E1F2467B30097E34B /* WLMineViewController.xib in Resources */,
 				8E1840C71F22FCB20005A719 /* LaunchScreen.storyboard in Resources */,
 				8E1840C41F22FCB20005A719 /* Assets.xcassets in Resources */,
+				8E8C46851F258B040053AB43 /* WLMyMessageViewController.xib in Resources */,
 				8E1840C21F22FCB20005A719 /* Main.storyboard in Resources */,
 				8EB581181F2494110097E34B /* WLLoginViewController.xib in Resources */,
 			);
@@ -1000,6 +1019,7 @@
 			files = (
 				8E010B0B1F23375200F3D323 /* WLAppIsNewVersionTool.m in Sources */,
 				8E1843121F22FD640005A719 /* NMBaseAPIModel.m in Sources */,
+				8E8C46881F25933E0053AB43 /* WLMyMessegeViewCell.m in Sources */,
 				8E1843E91F2313B60005A719 /* WLCollectionViewController.m in Sources */,
 				8E1843C61F22FD640005A719 /* NMViewRefreshStatusManager.m in Sources */,
 				8E1842F41F22FD640005A719 /* NSDictionary+Addition.m in Sources */,
@@ -1009,6 +1029,7 @@
 				8E1843061F22FD640005A719 /* UILabel+CountDown.m in Sources */,
 				8E1843A91F22FD640005A719 /* NSNull+Exception.m in Sources */,
 				8E1843A51F22FD640005A719 /* NSArray+NSRangeException.m in Sources */,
+				8E8C468B1F25ACE20053AB43 /* WLMyMessegeModel.m in Sources */,
 				8E1843131F22FD640005A719 /* WLBaseModel.m in Sources */,
 				8E1843D71F230BBB0005A719 /* WLHomeViewController.m in Sources */,
 				8E1843A61F22FD640005A719 /* NSDictionary+NSRangeException.m in Sources */,
@@ -1025,6 +1046,7 @@
 				8E1843051F22FD640005A719 /* UIImageView+LBBlurredImage.m in Sources */,
 				8E1843DF1F230CA00005A719 /* WLNearbyViewController.m in Sources */,
 				8E1842FB1F22FD640005A719 /* NSString+Encrypt.m in Sources */,
+				8E8C46841F258B040053AB43 /* WLMyMessageViewController.m in Sources */,
 				8E1842F71F22FD640005A719 /* NSObject+GCD.m in Sources */,
 				8E1842F31F22FD640005A719 /* NSDate+Addition.m in Sources */,
 				8EB5810D1F2467B30097E34B /* WLMineViewController.m in Sources */,
