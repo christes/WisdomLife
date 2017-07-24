@@ -6,10 +6,10 @@ pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'IQKeyboardManager'
 pod 'MJRefresh'
-pod 'MJExtension'
 pod 'Masonry'
 pod 'DZNEmptyDataSet'
 pod 'SAMKeychain'
 pod 'YYModel'
 pod 'MBProgressHUD'
 end
+
