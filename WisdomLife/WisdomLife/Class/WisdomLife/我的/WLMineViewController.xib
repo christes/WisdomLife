@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLMineViewController">
+            <connections>
+                <outlet property="edit" destination="Xef-LC-QqN" id="dMJ-wd-BEJ"/>
+                <outlet property="mine" destination="fbz-XL-wRZ" id="sd0-e9-jum"/>
+                <outlet property="phoneNum" destination="tyh-ZH-NzP" id="Mxv-gg-ivf"/>
+                <outlet property="photo" destination="ZjQ-vO-kRs" id="nQT-Vl-L4C"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_img_top" translatesAutoresizingMaskIntoConstraints="NO" id="Dwg-ye-8Lf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="212"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="212" id="3Y7-UZ-bw1"/>
+                    </constraints>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_ihead_portrait" translatesAutoresizingMaskIntoConstraints="NO" id="ZjQ-vO-kRs">
+                    <rect key="frame" x="152.5" y="71" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="7nP-1Z-nyO"/>
+                        <constraint firstAttribute="height" constant="70" id="lMn-CK-eKO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyh-ZH-NzP">
+                    <rect key="frame" x="166.5" y="175" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_iamend" translatesAutoresizingMaskIntoConstraints="NO" id="Xef-LC-QqN">
+                    <rect key="frame" x="217.5" y="175" width="16" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="nQC-8r-oUi"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_ibaseboard_02" translatesAutoresizingMaskIntoConstraints="NO" id="xhN-92-FmX">
+                    <rect key="frame" x="20" y="236" width="335" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="Pzt-Vi-e40"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fbz-XL-wRZ">
+                    <rect key="frame" x="20" y="236" width="335" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="w18-hG-KUh"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="plr-3c-8N2"/>
+                        <outlet property="delegate" destination="-1" id="Srb-31-1wQ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tyh-ZH-NzP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2y2-AL-OZJ"/>
+                <constraint firstItem="fbz-XL-wRZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="6Yw-vI-Z74"/>
+                <constraint firstItem="Dwg-ye-8Lf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7Zu-AG-aOg"/>
+                <constraint firstItem="Xef-LC-QqN" firstAttribute="leading" secondItem="tyh-ZH-NzP" secondAttribute="trailing" constant="9" id="IOH-QG-vbb"/>
+                <constraint firstItem="xhN-92-FmX" firstAttribute="top" secondItem="Dwg-ye-8Lf" secondAttribute="bottom" constant="24" id="R2J-Sq-Kkx"/>
+                <constraint firstItem="fbz-XL-wRZ" firstAttribute="top" secondItem="Dwg-ye-8Lf" secondAttribute="bottom" constant="24" id="R3J-oc-KO6"/>
+                <constraint firstItem="ZjQ-vO-kRs" firstAttribute="centerX" secondItem="Dwg-ye-8Lf" secondAttribute="centerX" id="Tc2-Lu-YPx"/>
+                <constraint firstAttribute="trailing" secondItem="Dwg-ye-8Lf" secondAttribute="trailing" id="Yfq-jB-zhO"/>
+                <constraint firstItem="tyh-ZH-NzP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="175" id="Z25-W2-mZ5"/>
+                <constraint firstItem="Dwg-ye-8Lf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bGK-nW-tyX"/>
+                <constraint firstAttribute="trailing" secondItem="xhN-92-FmX" secondAttribute="trailing" constant="20" id="fOU-6W-cbq"/>
+                <constraint firstAttribute="trailing" secondItem="fbz-XL-wRZ" secondAttribute="trailing" constant="20" id="ist-Je-KHt"/>
+                <constraint firstItem="Xef-LC-QqN" firstAttribute="top" secondItem="tyh-ZH-NzP" secondAttribute="top" id="nHN-EP-PFs"/>
+                <constraint firstItem="xhN-92-FmX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="s6z-fF-f2C"/>
+                <constraint firstItem="ZjQ-vO-kRs" firstAttribute="centerY" secondItem="Dwg-ye-8Lf" secondAttribute="centerY" id="xPr-8Z-7Es"/>
+                <constraint firstItem="Xef-LC-QqN" firstAttribute="height" secondItem="tyh-ZH-NzP" secondAttribute="height" id="zDV-5u-9o5"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="161.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_iamend" width="20" height="20"/>
+        <image name="mine_ibaseboard_02" width="347" height="312"/>
+        <image name="mine_ihead_portrait" width="69" height="69"/>
+        <image name="mine_img_top" width="375" height="225"/>
+    </resources>
+</document>
