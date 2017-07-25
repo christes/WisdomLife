@@ -73,20 +73,21 @@
 		8E1843C31F22FD640005A719 /* NMUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1842DB1F22FD640005A719 /* NMUserInfoManager.m */; };
 		8E1843C61F22FD640005A719 /* NMViewRefreshStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1842E31F22FD640005A719 /* NMViewRefreshStatusManager.m */; };
 		8E1843C91F22FD640005A719 /* NMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1842EC1F22FD640005A719 /* NMConst.m */; };
-		8E1843CE1F2304E60005A719 /* NMLoadingFailedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843CD1F2304E60005A719 /* NMLoadingFailedView.m */; };
 		8E1843D11F2305850005A719 /* WLUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843D01F2305850005A719 /* WLUserInfoModel.m */; };
 		8E1843D71F230BBB0005A719 /* WLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843D61F230BBB0005A719 /* WLHomeViewController.m */; };
 		8E1843DF1F230CA00005A719 /* WLNearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843DE1F230CA00005A719 /* WLNearbyViewController.m */; };
 		8E1843E21F230CB40005A719 /* WLLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843E11F230CB40005A719 /* WLLifeViewController.m */; };
 		8E1843E91F2313B60005A719 /* WLCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843E81F2313B60005A719 /* WLCollectionViewController.m */; };
 		8E1843EC1F2314F60005A719 /* WLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843EB1F2314F60005A719 /* WLCollectionViewCell.m */; };
+		8E63A1451F26F38F00430A1A /* WLCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E63A1431F26F38F00430A1A /* WLCardController.m */; };
+		8E63A1461F26F38F00430A1A /* WLCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E63A1441F26F38F00430A1A /* WLCardController.xib */; };
+		8E63A1491F26F40900430A1A /* WLCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E63A1481F26F40900430A1A /* WLCardCell.m */; };
 		8E8C46941F25CD9E0053AB43 /* WLMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C468E1F25CD9E0053AB43 /* WLMyMessageViewController.m */; };
 		8E8C46951F25CD9E0053AB43 /* WLMyMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E8C468F1F25CD9E0053AB43 /* WLMyMessageViewController.xib */; };
 		8E8C46961F25CD9E0053AB43 /* WLMyMessegeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46911F25CD9E0053AB43 /* WLMyMessegeModel.m */; };
 		8E8C46971F25CD9E0053AB43 /* WLMyMessegeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46931F25CD9E0053AB43 /* WLMyMessegeViewCell.m */; };
 		8E8C469F1F25CE8E0053AB43 /* WLMyWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C469D1F25CE8E0053AB43 /* WLMyWalletViewController.m */; };
 		8E8C46A01F25CE8E0053AB43 /* WLMyWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E8C469E1F25CE8E0053AB43 /* WLMyWalletViewController.xib */; };
-		8E8C46A31F25E7530053AB43 /* WLCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46A21F25E7530053AB43 /* WLCardController.m */; };
 		8E8C46A71F25E79A0053AB43 /* WLMyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46A51F25E79A0053AB43 /* WLMyOrderViewController.m */; };
 		8E8C46A81F25E79A0053AB43 /* WLMyOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E8C46A61F25E79A0053AB43 /* WLMyOrderViewController.xib */; };
 		8E8C46AC1F25E7C20053AB43 /* WLShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C46AA1F25E7C20053AB43 /* WLShoppingCartViewController.m */; };
@@ -237,8 +238,6 @@
 		8E1842ED1F22FD640005A719 /* NMEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMEnum.h; sourceTree = "<group>"; };
 		8E1842EE1F22FD640005A719 /* NMMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMMacros.h; sourceTree = "<group>"; };
 		8E1843CA1F22FEB30005A719 /* WisdomLifePCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WisdomLifePCH.pch; sourceTree = "<group>"; };
-		8E1843CC1F2304E60005A719 /* NMLoadingFailedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMLoadingFailedView.h; sourceTree = "<group>"; };
-		8E1843CD1F2304E60005A719 /* NMLoadingFailedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMLoadingFailedView.m; sourceTree = "<group>"; };
 		8E1843CF1F2305850005A719 /* WLUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLUserInfoModel.h; sourceTree = "<group>"; };
 		8E1843D01F2305850005A719 /* WLUserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLUserInfoModel.m; sourceTree = "<group>"; };
 		8E1843D21F2306E40005A719 /* WLAPIS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAPIS.h; sourceTree = "<group>"; };
@@ -252,6 +251,11 @@
 		8E1843E81F2313B60005A719 /* WLCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewController.m; sourceTree = "<group>"; };
 		8E1843EA1F2314F60005A719 /* WLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectionViewCell.h; sourceTree = "<group>"; };
 		8E1843EB1F2314F60005A719 /* WLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewCell.m; sourceTree = "<group>"; };
+		8E63A1421F26F38F00430A1A /* WLCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCardController.h; sourceTree = "<group>"; };
+		8E63A1431F26F38F00430A1A /* WLCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCardController.m; sourceTree = "<group>"; };
+		8E63A1441F26F38F00430A1A /* WLCardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLCardController.xib; sourceTree = "<group>"; };
+		8E63A1471F26F40900430A1A /* WLCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCardCell.h; sourceTree = "<group>"; };
+		8E63A1481F26F40900430A1A /* WLCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCardCell.m; sourceTree = "<group>"; };
 		8E8C468D1F25CD9E0053AB43 /* WLMyMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyMessageViewController.h; sourceTree = "<group>"; };
 		8E8C468E1F25CD9E0053AB43 /* WLMyMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyMessageViewController.m; sourceTree = "<group>"; };
 		8E8C468F1F25CD9E0053AB43 /* WLMyMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMyMessageViewController.xib; sourceTree = "<group>"; };
@@ -262,8 +266,6 @@
 		8E8C469C1F25CE8E0053AB43 /* WLMyWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyWalletViewController.h; sourceTree = "<group>"; };
 		8E8C469D1F25CE8E0053AB43 /* WLMyWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyWalletViewController.m; sourceTree = "<group>"; };
 		8E8C469E1F25CE8E0053AB43 /* WLMyWalletViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMyWalletViewController.xib; sourceTree = "<group>"; };
-		8E8C46A11F25E7530053AB43 /* WLCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCardController.h; sourceTree = "<group>"; };
-		8E8C46A21F25E7530053AB43 /* WLCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCardController.m; sourceTree = "<group>"; };
 		8E8C46A41F25E79A0053AB43 /* WLMyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyOrderViewController.h; sourceTree = "<group>"; };
 		8E8C46A51F25E79A0053AB43 /* WLMyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyOrderViewController.m; sourceTree = "<group>"; };
 		8E8C46A61F25E79A0053AB43 /* WLMyOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMyOrderViewController.xib; sourceTree = "<group>"; };
@@ -648,7 +650,6 @@
 		8E18426D1F22FD630005A719 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				8E1843CB1F2304C90005A719 /* NMLoadingFailedView */,
 				8E1842741F22FD640005A719 /* NMAdjustPositionButton */,
 				8E18428E1F22FD640005A719 /* NMCrashHandler */,
 				8E1842A21F22FD640005A719 /* NMEmptyDataDataSource */,
@@ -795,15 +796,6 @@
 			path = ThirdParty;
 			sourceTree = "<group>";
 		};
-		8E1843CB1F2304C90005A719 /* NMLoadingFailedView */ = {
-			isa = PBXGroup;
-			children = (
-				8E1843CC1F2304E60005A719 /* NMLoadingFailedView.h */,
-				8E1843CD1F2304E60005A719 /* NMLoadingFailedView.m */,
-			);
-			path = NMLoadingFailedView;
-			sourceTree = "<group>";
-		};
 		8E1843D31F230B190005A719 /* WisdomLife */ = {
 			isa = PBXGroup;
 			children = (
@@ -904,8 +896,11 @@
 		8E8C46991F25CE0E0053AB43 /* 卡包 */ = {
 			isa = PBXGroup;
 			children = (
-				8E8C46A11F25E7530053AB43 /* WLCardController.h */,
-				8E8C46A21F25E7530053AB43 /* WLCardController.m */,
+				8E63A1421F26F38F00430A1A /* WLCardController.h */,
+				8E63A1431F26F38F00430A1A /* WLCardController.m */,
+				8E63A1441F26F38F00430A1A /* WLCardController.xib */,
+				8E63A1471F26F40900430A1A /* WLCardCell.h */,
+				8E63A1481F26F40900430A1A /* WLCardCell.m */,
 			);
 			path = "卡包";
 			sourceTree = "<group>";
@@ -1028,6 +1023,7 @@
 				8EB581181F2494110097E34B /* WLLoginViewController.xib in Resources */,
 				8E8C46A01F25CE8E0053AB43 /* WLMyWalletViewController.xib in Resources */,
 				8E8C46951F25CD9E0053AB43 /* WLMyMessageViewController.xib in Resources */,
+				8E63A1461F26F38F00430A1A /* WLCardController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1147,8 +1143,6 @@
 				8E1843091F22FD640005A719 /* UISwitch+BLBlock.m in Sources */,
 				8E1843C91F22FD640005A719 /* NMConst.m in Sources */,
 				8E1840BC1F22FCB20005A719 /* AppDelegate.m in Sources */,
-				8E1843CE1F2304E60005A719 /* NMLoadingFailedView.m in Sources */,
-				8E8C46A31F25E7530053AB43 /* WLCardController.m in Sources */,
 				8E1843AC1F22FD640005A719 /* UINavigationController+Consistent.m in Sources */,
 				8E1843191F22FD640005A719 /* NMTabBarVC.m in Sources */,
 				8E1843EC1F2314F60005A719 /* WLCollectionViewCell.m in Sources */,
@@ -1158,7 +1152,9 @@
 				8EB581111F248D3D0097E34B /* WLMineViewCell.m in Sources */,
 				8E1843111F22FD640005A719 /* UIViewController+NMAdd.m in Sources */,
 				8E1842F61F22FD640005A719 /* NSObject+AddProperty.m in Sources */,
+				8E63A1491F26F40900430A1A /* WLCardCell.m in Sources */,
 				8E1843041F22FD640005A719 /* UIImageView+Addition.m in Sources */,
+				8E63A1451F26F38F00430A1A /* WLCardController.m in Sources */,
 				8E1843141F22FD640005A719 /* NMBaseStore.m in Sources */,
 				8E1840B91F22FCB20005A719 /* main.m in Sources */,
 				8E1842FF1F22FD640005A719 /* UIBarButtonItem+Category.m in Sources */,

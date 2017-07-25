@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NMLoadingFailedView.h"
 @interface WLBaseVC : UIViewController
 
-@property (nonatomic, strong) NMLoadingFailedView *loadingFailedView;
 @property (nonatomic, strong) UIBarButtonItem *leftBarButtonItem;
 @property (nonatomic, strong) UIBarButtonItem *rightBarButtonItem;
 /** 是否支持侧滑返回, 默认YES */

@@ -66,7 +66,13 @@
 //                             @"WLShoppingCartViewController"];
     
         UIViewController *VC = (UIViewController *)[NSClassFromString(self.controllerArray[indexPath.row]) new];
-       VC.title = self.modelArray[indexPath.row].title;
+    if (indexPath.row == 2) {
+        
+        VC.title = @"我的卡包";
+    }else{
+        VC.title = self.modelArray[indexPath.row].title;
+    }
+    
     VC.hidesBottomBarWhenPushed = YES;
       [self.navigationController pushViewController:VC animated:YES];
 //    if (indexPath.row ==0) {

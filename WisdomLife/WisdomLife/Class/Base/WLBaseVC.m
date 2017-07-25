@@ -52,37 +52,17 @@ static const CGFloat navBarItemfixedSpaceWidth = -1;
 
 /** 初始化页面 */
 - (void)initSubviews {
-    [self.view addSubview:self.loadingFailedView];
+    
 }
 
 - (void)initLayout {
-    [_loadingFailedView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(64, 0, 0, 0));
-    }];
 }
 
 /** 事件处理 */
 - (void)handleViewAction{
     WL_WEAKSELF
-    _loadingFailedView.actionBlock = ^(){
-        WL_STRONGSELF
-        [self reloadPage];
-    };
 }
 
-/** 重新加载 */
-- (void)reloadViewShouldShow:(BOOL)isShow{
-    self.loadingFailedView.hidden = !isShow;
-    if (isShow) {
-        self.rightBarButtonItem.enabled = NO;
-        self.leftBarButtonItem.enabled = NO;
-        [self.view bringSubviewToFront:self.loadingFailedView];
-    } else {
-        self.rightBarButtonItem.enabled = YES;
-        self.leftBarButtonItem.enabled = YES;
-        [self.view sendSubviewToBack:self.loadingFailedView];
-    }
-}
 
 - (void)reloadPage{
     WLLog(@"刷新页面");
@@ -100,14 +80,7 @@ static const CGFloat navBarItemfixedSpaceWidth = -1;
 
 #pragma mark - - lazy load
 
-- (NMLoadingFailedView *)loadingFailedView{
-    if (!_loadingFailedView) {
-        _loadingFailedView = [[NMLoadingFailedView alloc] init];
-        _loadingFailedView.hidden = YES;
-        _loadingFailedView.type = NMNoDataViewTypeRefresh;
-    }
-    return _loadingFailedView;
-}
+
 
 
 #pragma mark - - left right Item

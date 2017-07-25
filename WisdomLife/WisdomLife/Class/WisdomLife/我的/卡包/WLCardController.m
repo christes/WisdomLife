@@ -2,13 +2,15 @@
 //  WLCardController.m
 //  WisdomLife
 //
-//  Created by boundlessocean on 2017/7/24.
+//  Created by boundlessocean on 2017/7/25.
 //  Copyright © 2017年 boundlessocean. All rights reserved.
 //
 
 #import "WLCardController.h"
+#import "WLCardCell.h"
 
-@interface WLCardController ()
+@interface WLCardController ()<UITableViewDelegate,UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *cardTabview;
 
 @end
 
@@ -16,22 +18,49 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _cardTabview.rowHeight = WL_HEIGHT(103);
+    // Do any additional setup after loading the view from its nib.
+//    _cardTabview.sectionHeaderHeight = 0;
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+//
+//    return 5;
+//
+//}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-/*
-#pragma mark - Navigation
+    return 4;
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
+//-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+//    if (section ==0) {
+//        return 0.1;
+//    }else{
+//        return 0.1
+//        ;
+//    }
+//
+////}
+//-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section:(NSInteger)section{
+//    return 0.1;
+//
+//}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    WLCardCell *cell = nil;
+    cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+
+    
+    
+    if (cell == nil) {
+        cell = [[WLCardCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+        
+    }
+    
+    return  cell;
+
+}
 
 @end
