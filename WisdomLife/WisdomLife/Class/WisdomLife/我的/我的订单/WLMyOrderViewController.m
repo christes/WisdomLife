@@ -2,13 +2,15 @@
 //  WLMyOrderViewController.m
 //  WisdomLife
 //
-//  Created by boundlessocean on 2017/7/24.
+//  Created by boundlessocean on 2017/7/26.
 //  Copyright © 2017年 boundlessocean. All rights reserved.
 //
 
 #import "WLMyOrderViewController.h"
+#import "WLMyOredrViewCell.h"
 
-@interface WLMyOrderViewController ()
+@interface WLMyOrderViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *myOrder;
 
 @end
 
@@ -17,21 +19,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _myOrder.rowHeight = WL_HEIGHT(141);
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 3;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    WLMyOredrViewCell *cell = nil;
+    cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (cell == nil) {
+        cell = [[WLMyOredrViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+    }
+    return cell;
+
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

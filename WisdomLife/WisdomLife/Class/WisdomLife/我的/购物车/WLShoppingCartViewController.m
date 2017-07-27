@@ -7,31 +7,50 @@
 //
 
 #import "WLShoppingCartViewController.h"
+#import "WLShoppingCarViewCell.h"
 
-@interface WLShoppingCartViewController ()
+@interface WLShoppingCartViewController ()<UITableViewDelegate,UITableViewDataSource>
+/** 全选按钮 */
+@property (strong, nonatomic) IBOutlet UIButton *allSelect;
+/** 金额 */
+@property (strong, nonatomic) IBOutlet UILabel *money;
+/** 金额符号 */
+@property (strong, nonatomic) IBOutlet UILabel *moneySymbol;
+/** 购物车tanview */
+@property (strong, nonatomic) IBOutlet UITableView *shoppingCar;
 
 @end
 
 @implementation WLShoppingCartViewController
+/** 点击全选按 */
+- (IBAction)didAllSelected:(id)sender {
+    [_allSelect setImage:[UIImage imageNamed:@"choiceshoppings"] forState:UIControlStateSelected];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _shoppingCar.rowHeight = WL_HEIGHT(150);
+    _money.textColor = WL_COLOR_THEME;
+    _moneySymbol.textColor = WL_COLOR_THEME;
+    
+    
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 3;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    WLShoppingCarViewCell *cell = nil;
+    cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (cell ==nil) {
+        cell = [[WLShoppingCarViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+        
+    }
+    return cell;
+
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

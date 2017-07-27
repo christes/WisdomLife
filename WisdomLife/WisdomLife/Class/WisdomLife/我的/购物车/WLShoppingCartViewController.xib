@@ -11,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLShoppingCartViewController">
             <connections>
+                <outlet property="allSelect" destination="rX6-ne-TDi" id="a5b-a1-gMV"/>
+                <outlet property="money" destination="XOv-7W-U7X" id="lIq-Hy-9t7"/>
+                <outlet property="moneySymbol" destination="DnL-8S-bbk" id="tAV-Vz-23T"/>
+                <outlet property="shoppingCar" destination="8Dz-ss-MP8" id="VAt-LI-FYa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,21 +23,25 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Dz-ss-MP8">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Dz-ss-MP8">
                     <rect key="frame" x="10" y="10" width="355" height="607"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="NtI-KN-lbz"/>
+                        <outlet property="delegate" destination="-1" id="wPe-E3-qRl"/>
+                    </connections>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewD-Tz-bro">
                     <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbl-LR-SLh">
-                            <rect key="frame" x="126.5" y="15" width="52" height="21"/>
+                            <rect key="frame" x="121" y="15" width="52" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cOu-HI-dg0">
-                            <rect key="frame" x="262.5" y="0.0" width="112.5" height="50"/>
+                            <rect key="frame" x="273" y="0.0" width="102" height="50"/>
                             <state key="normal" backgroundImage="buttonshopping">
                                 <attributedString key="attributedTitle">
                                     <fragment content="结算">
@@ -45,29 +53,40 @@
                                 </attributedString>
                             </state>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX6-ne-TDi">
-                            <rect key="frame" x="20" y="14" width="23.5" height="22"/>
-                            <state key="normal" image="choice_n-"/>
-                            <state key="selected" image="choice_s-"/>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX6-ne-TDi">
+                            <rect key="frame" x="20" y="14" width="21" height="22"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="choiceshopping"/>
+                            <state key="selected" image="choiceshoppings"/>
+                            <connections>
+                                <action selector="didAllSelected:" destination="-1" eventType="touchUpInside" id="UDa-q6-jsN"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全选" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQu-A3-T7N">
-                            <rect key="frame" x="48.5" y="15" width="33" height="20"/>
+                            <rect key="frame" x="46" y="15" width="33" height="20"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dc6-tP-y6H">
-                            <rect key="frame" x="187.5" y="14" width="0.0" height="22"/>
+                            <rect key="frame" x="182" y="14" width="12" height="22"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOv-7W-U7X">
-                            <rect key="frame" x="196.5" y="15" width="21" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <rect key="frame" x="203" y="13.5" width="25" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnL-8S-bbk">
+                            <rect key="frame" x="182" y="12" width="12" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="DnL-8S-bbk" firstAttribute="leading" secondItem="tbl-LR-SLh" secondAttribute="trailing" constant="9" id="16s-An-Yvc"/>
                         <constraint firstAttribute="bottom" secondItem="cOu-HI-dg0" secondAttribute="bottom" id="1P5-Tk-MR4"/>
                         <constraint firstItem="Dc6-tP-y6H" firstAttribute="top" secondItem="rX6-ne-TDi" secondAttribute="top" id="1cL-kQ-fmQ"/>
                         <constraint firstAttribute="trailing" secondItem="cOu-HI-dg0" secondAttribute="trailing" id="2Ev-72-RxG"/>
@@ -78,11 +97,13 @@
                         <constraint firstItem="Dc6-tP-y6H" firstAttribute="leading" secondItem="tbl-LR-SLh" secondAttribute="trailing" constant="9" id="FbQ-Qb-z9Q"/>
                         <constraint firstItem="Dc6-tP-y6H" firstAttribute="bottom" secondItem="rX6-ne-TDi" secondAttribute="bottom" id="GlD-Lx-5OJ"/>
                         <constraint firstItem="cOu-HI-dg0" firstAttribute="top" secondItem="ewD-Tz-bro" secondAttribute="top" id="L0r-s1-z7O"/>
-                        <constraint firstItem="tbl-LR-SLh" firstAttribute="leading" secondItem="AQu-A3-T7N" secondAttribute="trailing" constant="45" id="L1S-yp-MsD"/>
+                        <constraint firstItem="tbl-LR-SLh" firstAttribute="leading" secondItem="AQu-A3-T7N" secondAttribute="trailing" constant="42" id="L1S-yp-MsD"/>
                         <constraint firstItem="rX6-ne-TDi" firstAttribute="centerY" secondItem="ewD-Tz-bro" secondAttribute="centerY" id="M5n-Jg-dpr"/>
+                        <constraint firstItem="XOv-7W-U7X" firstAttribute="leading" secondItem="DnL-8S-bbk" secondAttribute="trailing" constant="9" id="USz-5k-lAT"/>
                         <constraint firstItem="cOu-HI-dg0" firstAttribute="leading" secondItem="XOv-7W-U7X" secondAttribute="trailing" constant="45" id="bLK-vz-WBR"/>
                         <constraint firstItem="Dc6-tP-y6H" firstAttribute="centerY" secondItem="ewD-Tz-bro" secondAttribute="centerY" id="cFG-RS-pwL"/>
                         <constraint firstItem="AQu-A3-T7N" firstAttribute="leading" secondItem="rX6-ne-TDi" secondAttribute="trailing" constant="5" id="g94-7J-h7s"/>
+                        <constraint firstItem="DnL-8S-bbk" firstAttribute="baseline" secondItem="tbl-LR-SLh" secondAttribute="baseline" id="hWB-XC-ZaC"/>
                         <constraint firstItem="XOv-7W-U7X" firstAttribute="centerY" secondItem="ewD-Tz-bro" secondAttribute="centerY" id="mvp-Nq-kXC"/>
                         <constraint firstItem="XOv-7W-U7X" firstAttribute="leading" secondItem="Dc6-tP-y6H" secondAttribute="trailing" constant="9" id="ptq-bB-Seu"/>
                     </constraints>
@@ -104,7 +125,7 @@
     </objects>
     <resources>
         <image name="buttonshopping" width="120" height="50"/>
-        <image name="choice_n-" width="20" height="20"/>
-        <image name="choice_s-" width="16" height="16"/>
+        <image name="choiceshopping" width="20" height="20"/>
+        <image name="choiceshoppings" width="20" height="20"/>
     </resources>
 </document>

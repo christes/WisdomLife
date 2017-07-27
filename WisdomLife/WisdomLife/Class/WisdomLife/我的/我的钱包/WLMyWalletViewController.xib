@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLMyWalletViewController">
             <connections>
+                <outlet property="myWallet" destination="erU-yc-Pbw" id="PkZ-gf-JMU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -77,16 +78,21 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="erU-yc-Pbw">
-                    <rect key="frame" x="15" y="270" width="345" height="397"/>
-                    <color key="backgroundColor" red="0.40724394009999998" green="1" blue="0.56452772809999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="erU-yc-Pbw">
+                    <rect key="frame" x="0.0" y="225" width="375" height="442"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sxf-4d-DAa"/>
+                        <outlet property="delegate" destination="-1" id="OeV-VM-bf1"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="6Mu-Rl-D0Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="85" id="044-u3-3YP"/>
                 <constraint firstAttribute="bottom" secondItem="erU-yc-Pbw" secondAttribute="bottom" id="4Xd-af-08q"/>
-                <constraint firstItem="erU-yc-Pbw" firstAttribute="top" secondItem="IF5-l7-wTL" secondAttribute="bottom" constant="90" id="9jr-vv-eXc"/>
+                <constraint firstItem="erU-yc-Pbw" firstAttribute="top" secondItem="IF5-l7-wTL" secondAttribute="bottom" constant="45" id="9jr-vv-eXc"/>
                 <constraint firstItem="39A-lN-M7i" firstAttribute="bottom" secondItem="6Mu-Rl-D0Y" secondAttribute="bottom" id="BrG-1b-E0Q"/>
                 <constraint firstItem="ORX-oh-Kvg" firstAttribute="leading" secondItem="3sv-db-dRC" secondAttribute="leading" constant="10" id="DCg-Yh-ddA"/>
                 <constraint firstItem="gfX-MW-2Wy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EH3-jm-EKC"/>
@@ -94,9 +100,9 @@
                 <constraint firstItem="ORX-oh-Kvg" firstAttribute="top" secondItem="4QT-WO-BG0" secondAttribute="top" id="Ggk-Sd-JVe"/>
                 <constraint firstItem="1Zu-DA-T1o" firstAttribute="top" secondItem="6Mu-Rl-D0Y" secondAttribute="top" id="Oid-I9-qbM"/>
                 <constraint firstItem="39A-lN-M7i" firstAttribute="leading" secondItem="6Mu-Rl-D0Y" secondAttribute="trailing" constant="10" id="P6I-8C-vnu"/>
-                <constraint firstAttribute="trailing" secondItem="erU-yc-Pbw" secondAttribute="trailing" constant="15" id="Qtc-Za-kaC"/>
+                <constraint firstAttribute="trailing" secondItem="erU-yc-Pbw" secondAttribute="trailing" id="Qtc-Za-kaC"/>
                 <constraint firstItem="3sv-db-dRC" firstAttribute="top" secondItem="6Mu-Rl-D0Y" secondAttribute="top" id="RBd-kG-2eo"/>
-                <constraint firstItem="erU-yc-Pbw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="TD4-fd-Wdj"/>
+                <constraint firstItem="erU-yc-Pbw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TD4-fd-Wdj"/>
                 <constraint firstItem="6Mu-Rl-D0Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="97.5" id="YDQ-5n-RZg"/>
                 <constraint firstItem="gfX-MW-2Wy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="Yh4-YJ-QI0"/>
                 <constraint firstItem="IF5-l7-wTL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c9e-rc-G8A"/>

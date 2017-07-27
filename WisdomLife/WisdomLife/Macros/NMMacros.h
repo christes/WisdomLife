@@ -68,7 +68,14 @@ alpha:alphaValue]
 
 /** 主题颜色 */
 #define WL_COLOR_THEME          WL_RGBCOLOR(50,178,255)
-
+/** 我的钱包金额正的颜色 */
+#define WL_COLOR_MONEY          WL_RGBCOLOR(52,224,255)
+/** 我的钱包日期颜色 */
+#define WL_COLOR_DATE           WL_RGBCOLOR(153,153,153)
+/** 我的钱包竖线颜色 */
+#define WL_COLOR_TOPANDBOTTOMLINE          WL_RGBCOLOR(238,238,238)
+/** 我的订单评价颜色 */
+#define WL_COLOR_EVALUATION          WL_RGBCOLOR(48,213,56)
 /** 底板背景色 */
 #define WL_COLOR_BACKG          WL_HEXCOLOR(0xf6f9fe)
 /** 分割线颜色 */
