@@ -7,13 +7,15 @@
 //
 
 #import "WLShoppingCarViewCell.h"
+
 @interface WLShoppingCarViewCell()
 /** 选择图标（小圆圈） */
 @property (nonatomic ,strong)UIButton *imageSelectV;
 /** 商家  */
 @property (nonatomic ,strong)UILabel *dealershipLabel;
 /** 编辑 */
-@property (nonatomic ,strong)UIButton *edit;
+@property (nonatomic ,strong) UIButton *edit;
+
 /** 图片 */
 @property (nonatomic ,strong)UIImageView *bigImageV;
 /** 套餐类型 */
@@ -24,6 +26,7 @@
 @property (nonatomic ,strong)UILabel *numberOf;
 /** 线 */
 @property (nonatomic ,strong)UIView *line;
+
 
 @end
 

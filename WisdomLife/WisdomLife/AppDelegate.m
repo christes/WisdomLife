@@ -13,6 +13,8 @@
 #import "NMTabBarVC.h"
 #import "WLAppIsNewVersionTool.h"
 #import "WLCollectionViewController.h"
+#import "WLLoginViewController.h"
+#import "WLRegisteredViewController.h"
 
 @interface AppDelegate ()
 
@@ -51,7 +53,7 @@
         };
         return newFeature;
     }else{
-        return [NMTabBarVC new];
+        return [WLLoginViewController new];
     }
 }
 

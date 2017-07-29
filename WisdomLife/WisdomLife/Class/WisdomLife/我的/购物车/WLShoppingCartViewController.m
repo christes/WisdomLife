@@ -24,7 +24,8 @@
 @implementation WLShoppingCartViewController
 /** 点击全选按 */
 - (IBAction)didAllSelected:(id)sender {
-    [_allSelect setImage:[UIImage imageNamed:@"choiceshoppings"] forState:UIControlStateSelected];
+    _allSelect.selected = !_allSelect.selected;
+//    [_allSelect setImage:[UIImage imageNamed:@"choiceshoppings"] forState:UIControlStateSelected];
 }
 
 - (void)viewDidLoad {
@@ -48,6 +49,11 @@
         
     }
     return cell;
+
+}
+- (void) didEditBtn:(UIButton *)button{
+    WLLog(@"sac");
+
 
 }
 

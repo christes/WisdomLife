@@ -11,6 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLLoginViewController">
             <connections>
+                <outlet property="ForgotPwd" destination="rZ0-rL-ST6" id="vo8-5M-foP"/>
+                <outlet property="account" destination="VZk-CD-1U9" id="ZCi-qe-Kfa"/>
+                <outlet property="noAccount" destination="WuB-yV-ai4" id="Rl0-Ew-XvC"/>
+                <outlet property="pwd" destination="LSI-xc-Tvu" id="ZD0-2E-RJE"/>
+                <outlet property="registered" destination="oOr-4H-EZg" id="DKV-iE-aTt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,27 +27,76 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="CE5-WM-ObU">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvr-dZ-dhT">
-                    <rect key="frame" x="172" y="360" width="30" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="ac"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1Z-pi-2ms">
+                    <rect key="frame" x="24" y="536.5" width="327" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="kNw-RO-it4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="登        录" backgroundImage="buttonlogin">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZE3-BL-XoZ">
-                    <rect key="frame" x="164" y="426" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号码" minimumFontSize="17" background="borderlogin" translatesAutoresizingMaskIntoConstraints="NO" id="VZk-CD-1U9">
+                    <rect key="frame" x="24" y="316.5" width="327" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="A2l-50-ycr"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="            密码" minimumFontSize="17" background="borderlogin" translatesAutoresizingMaskIntoConstraints="NO" id="LSI-xc-Tvu">
+                    <rect key="frame" x="24" y="376.5" width="327" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="9Eh-ib-GG6"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOr-4H-EZg">
+                    <rect key="frame" x="270" y="591.5" width="78" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="点此注册"/>
+                    <connections>
+                        <action selector="didRegistered:" destination="-1" eventType="touchUpInside" id="WMP-5A-vp1"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1Z-pi-2ms">
-                    <rect key="frame" x="164" y="534" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZ0-rL-ST6">
+                    <rect key="frame" x="251" y="425.5" width="97" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="忘记密码？"/>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有帐号？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuB-yV-ai4">
+                    <rect key="frame" x="178" y="599.5" width="87" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="oOr-4H-EZg" firstAttribute="top" secondItem="t1Z-pi-2ms" secondAttribute="bottom" constant="10" id="63N-pK-iq1"/>
+                <constraint firstItem="WuB-yV-ai4" firstAttribute="top" secondItem="t1Z-pi-2ms" secondAttribute="bottom" constant="18" id="Egu-UP-JnW"/>
+                <constraint firstAttribute="trailing" secondItem="oOr-4H-EZg" secondAttribute="trailing" constant="27" id="JO9-Q7-Du8"/>
+                <constraint firstItem="VZk-CD-1U9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="316.5" id="Kag-LM-u23"/>
+                <constraint firstItem="oOr-4H-EZg" firstAttribute="leading" secondItem="WuB-yV-ai4" secondAttribute="trailing" constant="5" id="Kg2-eS-mlU"/>
+                <constraint firstItem="LSI-xc-Tvu" firstAttribute="top" secondItem="VZk-CD-1U9" secondAttribute="bottom" constant="16" id="MPg-9J-tQh"/>
+                <constraint firstItem="rZ0-rL-ST6" firstAttribute="top" secondItem="LSI-xc-Tvu" secondAttribute="bottom" constant="5" id="MiX-Lp-aKP"/>
                 <constraint firstItem="CE5-WM-ObU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NeM-hV-FJs"/>
+                <constraint firstAttribute="trailing" secondItem="LSI-xc-Tvu" secondAttribute="trailing" constant="24" id="NsM-xr-PEu"/>
+                <constraint firstAttribute="trailing" secondItem="VZk-CD-1U9" secondAttribute="trailing" constant="24" id="XB8-cT-3Uc"/>
+                <constraint firstItem="LSI-xc-Tvu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="ZwM-V5-Sgh"/>
+                <constraint firstItem="t1Z-pi-2ms" firstAttribute="top" secondItem="rZ0-rL-ST6" secondAttribute="bottom" constant="76" id="a5x-Nm-wQO"/>
+                <constraint firstAttribute="trailing" secondItem="rZ0-rL-ST6" secondAttribute="trailing" constant="27" id="c0h-WS-PYY"/>
                 <constraint firstAttribute="trailing" secondItem="CE5-WM-ObU" secondAttribute="trailing" id="iHu-CD-3n6"/>
                 <constraint firstAttribute="bottom" secondItem="CE5-WM-ObU" secondAttribute="bottom" id="n7e-78-tCN"/>
+                <constraint firstItem="VZk-CD-1U9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="t8R-7G-C4b"/>
+                <constraint firstAttribute="trailing" secondItem="t1Z-pi-2ms" secondAttribute="trailing" constant="24" id="xaZ-Fg-jxp"/>
+                <constraint firstItem="t1Z-pi-2ms" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="zE7-Sc-FSq"/>
                 <constraint firstItem="CE5-WM-ObU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zEv-kR-S0M"/>
             </constraints>
             <point key="canvasLocation" x="35.5" y="53.5"/>
@@ -50,5 +104,7 @@
     </objects>
     <resources>
         <image name="bg" width="375" height="667"/>
+        <image name="borderlogin" width="325" height="44"/>
+        <image name="buttonlogin" width="325" height="45"/>
     </resources>
 </document>

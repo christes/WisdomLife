@@ -1,37 +1,33 @@
 //
-//  WLLoginViewController.m
+//  WLRegisteredViewController.m
 //  WisdomLife
 //
-//  Created by boundlessocean on 2017/7/23.
+//  Created by boundlessocean on 2017/7/28.
 //  Copyright © 2017年 boundlessocean. All rights reserved.
 //
 
-#import "WLLoginViewController.h"
 #import "WLRegisteredViewController.h"
 
-@interface WLLoginViewController ()
+@interface WLRegisteredViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *account;
+@property (strong, nonatomic) IBOutlet UITextField *VerificationCode;
+@property (strong, nonatomic) IBOutlet UILabel *haveAccount;
 @property (strong, nonatomic) IBOutlet UITextField *pwd;
-@property (strong, nonatomic) IBOutlet UILabel *noAccount;
 @property (strong, nonatomic) IBOutlet UIButton *registered;
-@property (strong, nonatomic) IBOutlet UIButton *ForgotPwd;
+@property (strong, nonatomic) IBOutlet UILabel *readAngAgree;
+@property (strong, nonatomic) IBOutlet UIButton *login;
 
 @end
 
-@implementation WLLoginViewController
-- (IBAction)didRegistered:(id)sender {
-//    [self presentViewController:[WLRegisteredViewController new] animated:YES completion:^{
-//        WLLog(@"sas");
-//    }];
-}
+@implementation WLRegisteredViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setInterface];
-    
+    // Do any additional setup after loading the view from its nib.
 }
+
 - (void)setInterface{
-     /** 设置leftview */
+    /** 设置leftview */
     UIImageView *imageV =[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mobile_phonelogin"]];
     UIView *view = [[UIView alloc] init];
     view.size =CGSizeMake(50, 50);
@@ -56,25 +52,22 @@
     _pwd.leftView = viewPwd;
     _pwd.leftViewMode = UITextFieldViewModeAlways;
     /** 设置rightview */
-    UIImageView *imageVPwdRight =[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"invisible"]];
-    UIView *Right = [[UIView alloc] init];
-    Right.size =CGSizeMake(50, 50);
-    [Right addSubview:imageVPwdRight];
-    [imageVPwdRight mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(Right.mas_right).offset(-13);
-        make.centerY.mas_equalTo(Right.mas_centerY);
+    UIImageView *imageVVerification =[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"invisible"]];
+    UIView *Verification = [[UIView alloc] init];
+    Verification.size =CGSizeMake(50, 50);
+    [Verification addSubview:imageVVerification];
+    [imageVVerification mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(Verification.mas_right).offset(-13);
+        make.centerY.mas_equalTo(Verification.mas_centerY);
     }];
-    Right.backgroundColor = [UIColor clearColor];
-    _pwd.rightView = Right;
-    _pwd.rightViewMode = UITextFieldViewModeAlways;
+    Verification.backgroundColor = [UIColor clearColor];
+    _pwd.leftView = Verification;
+    _pwd.leftViewMode = UITextFieldViewModeAlways;
     /** 设置界面字体颜色 */
-    _noAccount.textColor = WL_COLOR_SUBTITLE;
-    _registered.titleLabel.textColor = WL_COLOR_THEME;
-    _ForgotPwd.titleLabel.textColor = WL_COLOR_THEME;
+    _haveAccount.textColor = WL_COLOR_SUBTITLE;
+    _login.titleLabel.textColor = WL_COLOR_THEME;
+    _readAngAgree.textColor = WL_COLOR_SUBTITLE;
 }
-
-
-
 
 
 @end

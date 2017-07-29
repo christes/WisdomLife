@@ -100,8 +100,10 @@
 		8EB5810E1F2467B30097E34B /* WLMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EB5810C1F2467B30097E34B /* WLMineViewController.xib */; };
 		8EB581111F248D3D0097E34B /* WLMineViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB581101F248D3D0097E34B /* WLMineViewCell.m */; };
 		8EB581171F2494110097E34B /* WLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB581151F2494110097E34B /* WLLoginViewController.m */; };
-		8EB581181F2494110097E34B /* WLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EB581161F2494110097E34B /* WLLoginViewController.xib */; };
 		8EB5811B1F24EFD40097E34B /* WLMineCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5811A1F24EFD40097E34B /* WLMineCellModel.m */; };
+		8EBB89281F2AF2E300B46B52 /* WLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EBB89271F2AF2E300B46B52 /* WLLoginViewController.xib */; };
+		8EBB892C1F2B302100B46B52 /* WLRegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBB892A1F2B302100B46B52 /* WLRegisteredViewController.m */; };
+		8EBB892D1F2B302100B46B52 /* WLRegisteredViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EBB892B1F2B302100B46B52 /* WLRegisteredViewController.xib */; };
 		FE4AB702D6915646B917EBF0 /* libPods-WisdomLife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED1CC166823B0F324ECC03E /* libPods-WisdomLife.a */; };
 /* End PBXBuildFile section */
 
@@ -291,9 +293,12 @@
 		8EB581101F248D3D0097E34B /* WLMineViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMineViewCell.m; sourceTree = "<group>"; };
 		8EB581141F2494110097E34B /* WLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLoginViewController.h; sourceTree = "<group>"; };
 		8EB581151F2494110097E34B /* WLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLoginViewController.m; sourceTree = "<group>"; };
-		8EB581161F2494110097E34B /* WLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLLoginViewController.xib; sourceTree = "<group>"; };
 		8EB581191F24EFD40097E34B /* WLMineCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMineCellModel.h; sourceTree = "<group>"; };
 		8EB5811A1F24EFD40097E34B /* WLMineCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMineCellModel.m; sourceTree = "<group>"; };
+		8EBB89271F2AF2E300B46B52 /* WLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLLoginViewController.xib; sourceTree = "<group>"; };
+		8EBB89291F2B302100B46B52 /* WLRegisteredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRegisteredViewController.h; sourceTree = "<group>"; };
+		8EBB892A1F2B302100B46B52 /* WLRegisteredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRegisteredViewController.m; sourceTree = "<group>"; };
+		8EBB892B1F2B302100B46B52 /* WLRegisteredViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLRegisteredViewController.xib; sourceTree = "<group>"; };
 		9F439E4AB66E337237E07458 /* Pods-WisdomLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-WisdomLife/Pods-WisdomLife.release.xcconfig"; sourceTree = "<group>"; };
 		EEFC3D6877B6947FD7C7A997 /* Pods-WisdomLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WisdomLife/Pods-WisdomLife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -811,7 +816,6 @@
 		8E1843D31F230B190005A719 /* WisdomLife */ = {
 			isa = PBXGroup;
 			children = (
-				8EB581131F2493C70097E34B /* 注册 */,
 				8EB581121F2493BD0097E34B /* 登录 */,
 				8E1843E61F2313940005A719 /* 引导页 */,
 				8E1843D41F230B2B0005A719 /* 首页 */,
@@ -950,17 +954,12 @@
 			children = (
 				8EB581141F2494110097E34B /* WLLoginViewController.h */,
 				8EB581151F2494110097E34B /* WLLoginViewController.m */,
-				8EB581161F2494110097E34B /* WLLoginViewController.xib */,
+				8EBB89271F2AF2E300B46B52 /* WLLoginViewController.xib */,
+				8EBB89291F2B302100B46B52 /* WLRegisteredViewController.h */,
+				8EBB892A1F2B302100B46B52 /* WLRegisteredViewController.m */,
+				8EBB892B1F2B302100B46B52 /* WLRegisteredViewController.xib */,
 			);
 			path = "登录";
-			sourceTree = "<group>";
-		};
-		8EB581131F2493C70097E34B /* 注册 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "注册";
-			path = "登录/注册";
 			sourceTree = "<group>";
 		};
 		BFE68092C4433EAF37D7056F /* Pods */ = {
@@ -1039,10 +1038,11 @@
 				8E8C46AD1F25E7C20053AB43 /* WLShoppingCartViewController.xib in Resources */,
 				8E1840C71F22FCB20005A719 /* LaunchScreen.storyboard in Resources */,
 				8E1840C41F22FCB20005A719 /* Assets.xcassets in Resources */,
-				8EB581181F2494110097E34B /* WLLoginViewController.xib in Resources */,
 				8E8C46A01F25CE8E0053AB43 /* WLMyWalletViewController.xib in Resources */,
 				8E2FC7C31F28A05D0081CD81 /* WLMyOrderViewController.xib in Resources */,
 				8E8C46951F25CD9E0053AB43 /* WLMyMessageViewController.xib in Resources */,
+				8EBB892D1F2B302100B46B52 /* WLRegisteredViewController.xib in Resources */,
+				8EBB89281F2AF2E300B46B52 /* WLLoginViewController.xib in Resources */,
 				8E63A1461F26F38F00430A1A /* WLCardController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1110,6 +1110,7 @@
 				8E1840BF1F22FCB20005A719 /* ViewController.m in Sources */,
 				8E1843A71F22FD640005A719 /* NSMutableAttributedString+NSRangeException.m in Sources */,
 				8E18430C1F22FD640005A719 /* UILabel+Addition.m in Sources */,
+				8EBB892C1F2B302100B46B52 /* WLRegisteredViewController.m in Sources */,
 				8E1843061F22FD640005A719 /* UILabel+CountDown.m in Sources */,
 				8E1843A91F22FD640005A719 /* NSNull+Exception.m in Sources */,
 				8E1843A51F22FD640005A719 /* NSArray+NSRangeException.m in Sources */,
