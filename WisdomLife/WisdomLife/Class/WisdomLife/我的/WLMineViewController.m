@@ -59,12 +59,6 @@
     return  cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//          NSArray *array = @[@"WLMyMessageViewController",
-//                             @"WLMyWalletViewController",
-//                             @"WLCardController",
-//                             @"WLMyOrderViewController",
-//                             @"WLShoppingCartViewController"];
-    
         UIViewController *VC = (UIViewController *)[NSClassFromString(self.controllerArray[indexPath.row]) new];
     if (indexPath.row == 2) {
         

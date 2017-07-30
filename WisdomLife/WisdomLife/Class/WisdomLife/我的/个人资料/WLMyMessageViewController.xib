@@ -12,7 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLMyMessageViewController">
             <connections>
                 <outlet property="myMessege" destination="HiR-Ej-igW" id="JbF-s5-Sx2"/>
-                <outlet property="outLoginBtn" destination="Gp7-Qp-VW2" id="Tpa-6i-IHT"/>
+                <outlet property="outLoginBtn" destination="Gp7-Qp-VW2" id="brh-9v-o9V"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

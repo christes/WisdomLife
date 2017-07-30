@@ -53,7 +53,7 @@
         };
         return newFeature;
     }else{
-        return [WLLoginViewController new];
+        return [NMTabBarVC new];
     }
 }
 

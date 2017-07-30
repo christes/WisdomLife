@@ -20,9 +20,9 @@
 
 @implementation WLLoginViewController
 - (IBAction)didRegistered:(id)sender {
-//    [self presentViewController:[WLRegisteredViewController new] animated:YES completion:^{
-//        WLLog(@"sas");
-//    }];
+    [self presentViewController:[WLRegisteredViewController new] animated:YES completion:^{
+        WLLog(@"sas");
+    }];
 }
 
 - (void)viewDidLoad {
@@ -32,6 +32,8 @@
 }
 - (void)setInterface{
      /** 设置leftview */
+    [_account becomeFirstResponder];
+    
     UIImageView *imageV =[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mobile_phonelogin"]];
     UIView *view = [[UIView alloc] init];
     view.size =CGSizeMake(50, 50);
@@ -46,7 +48,7 @@
     /** 设置leftview */
     UIImageView *imageVPwd =[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"password"]];
     UIView *viewPwd = [[UIView alloc] init];
-    view.size =CGSizeMake(50, 50);
+    viewPwd.size =CGSizeMake(50, 50);
     [viewPwd addSubview:imageVPwd];
     [imageVPwd mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(viewPwd.mas_left).offset(20);

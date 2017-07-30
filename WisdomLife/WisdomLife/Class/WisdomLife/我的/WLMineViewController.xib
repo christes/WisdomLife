@@ -23,18 +23,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_img_top" translatesAutoresizingMaskIntoConstraints="NO" id="Dwg-ye-8Lf">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="212"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="212" id="3Y7-UZ-bw1"/>
-                    </constraints>
-                </imageView>
-                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_ihead_portrait" translatesAutoresizingMaskIntoConstraints="NO" id="ZjQ-vO-kRs">
-                    <rect key="frame" x="152.5" y="71" width="70" height="70"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="70" id="7nP-1Z-nyO"/>
-                        <constraint firstAttribute="height" constant="70" id="lMn-CK-eKO"/>
-                    </constraints>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_baseboard" translatesAutoresizingMaskIntoConstraints="NO" id="Dwg-ye-8Lf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyh-ZH-NzP">
                     <rect key="frame" x="166.5" y="175" width="42" height="21"/>
@@ -43,55 +33,60 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_iamend" translatesAutoresizingMaskIntoConstraints="NO" id="Xef-LC-QqN">
-                    <rect key="frame" x="217.5" y="175" width="16" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="16" id="nQC-8r-oUi"/>
-                    </constraints>
+                    <rect key="frame" x="217.5" y="175" width="20" height="20"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_ibaseboard_02" translatesAutoresizingMaskIntoConstraints="NO" id="xhN-92-FmX">
-                    <rect key="frame" x="20" y="236" width="335" height="300"/>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_ibaseboard_02" translatesAutoresizingMaskIntoConstraints="NO" id="xhN-92-FmX">
+                    <rect key="frame" x="20" y="240" width="335" height="300"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="300" id="Pzt-Vi-e40"/>
+                        <constraint firstAttribute="height" constant="300" id="QGb-gU-Ump"/>
                     </constraints>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fbz-XL-wRZ">
-                    <rect key="frame" x="20" y="236" width="335" height="300"/>
+                    <rect key="frame" x="20" y="240" width="335" height="300"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="300" id="w18-hG-KUh"/>
+                        <constraint firstAttribute="height" constant="300" id="W6Z-MF-gZO"/>
                     </constraints>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="plr-3c-8N2"/>
                         <outlet property="delegate" destination="-1" id="Srb-31-1wQ"/>
                     </connections>
                 </tableView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_ihead_portrait" translatesAutoresizingMaskIntoConstraints="NO" id="ZjQ-vO-kRs">
+                    <rect key="frame" x="152" y="50" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="0ei-dv-hIv"/>
+                        <constraint firstAttribute="width" constant="70" id="T9g-EM-3Ca"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="tyh-ZH-NzP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2y2-AL-OZJ"/>
-                <constraint firstItem="fbz-XL-wRZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="6Yw-vI-Z74"/>
-                <constraint firstItem="Dwg-ye-8Lf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7Zu-AG-aOg"/>
-                <constraint firstItem="Xef-LC-QqN" firstAttribute="leading" secondItem="tyh-ZH-NzP" secondAttribute="trailing" constant="9" id="IOH-QG-vbb"/>
-                <constraint firstItem="xhN-92-FmX" firstAttribute="top" secondItem="Dwg-ye-8Lf" secondAttribute="bottom" constant="24" id="R2J-Sq-Kkx"/>
-                <constraint firstItem="fbz-XL-wRZ" firstAttribute="top" secondItem="Dwg-ye-8Lf" secondAttribute="bottom" constant="24" id="R3J-oc-KO6"/>
-                <constraint firstItem="ZjQ-vO-kRs" firstAttribute="centerX" secondItem="Dwg-ye-8Lf" secondAttribute="centerX" id="Tc2-Lu-YPx"/>
-                <constraint firstAttribute="trailing" secondItem="Dwg-ye-8Lf" secondAttribute="trailing" id="Yfq-jB-zhO"/>
-                <constraint firstItem="tyh-ZH-NzP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="175" id="Z25-W2-mZ5"/>
-                <constraint firstItem="Dwg-ye-8Lf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bGK-nW-tyX"/>
-                <constraint firstAttribute="trailing" secondItem="xhN-92-FmX" secondAttribute="trailing" constant="20" id="fOU-6W-cbq"/>
-                <constraint firstAttribute="trailing" secondItem="fbz-XL-wRZ" secondAttribute="trailing" constant="20" id="ist-Je-KHt"/>
-                <constraint firstItem="Xef-LC-QqN" firstAttribute="top" secondItem="tyh-ZH-NzP" secondAttribute="top" id="nHN-EP-PFs"/>
-                <constraint firstItem="xhN-92-FmX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="s6z-fF-f2C"/>
-                <constraint firstItem="ZjQ-vO-kRs" firstAttribute="centerY" secondItem="Dwg-ye-8Lf" secondAttribute="centerY" id="xPr-8Z-7Es"/>
-                <constraint firstItem="Xef-LC-QqN" firstAttribute="height" secondItem="tyh-ZH-NzP" secondAttribute="height" id="zDV-5u-9o5"/>
+                <constraint firstAttribute="trailing" secondItem="fbz-XL-wRZ" secondAttribute="trailing" constant="20" id="05e-9d-HgU"/>
+                <constraint firstItem="fbz-XL-wRZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="5TQ-Tx-ZYv"/>
+                <constraint firstItem="fbz-XL-wRZ" firstAttribute="top" secondItem="tyh-ZH-NzP" secondAttribute="bottom" constant="44" id="6sL-mw-U4I"/>
+                <constraint firstAttribute="trailing" secondItem="Dwg-ye-8Lf" secondAttribute="trailing" id="Cfx-VY-W8d"/>
+                <constraint firstAttribute="bottom" secondItem="Dwg-ye-8Lf" secondAttribute="bottom" constant="44" id="EBO-Gk-NF8"/>
+                <constraint firstItem="xhN-92-FmX" firstAttribute="top" secondItem="tyh-ZH-NzP" secondAttribute="bottom" constant="44" id="Gdk-PY-5dU"/>
+                <constraint firstAttribute="trailing" secondItem="xhN-92-FmX" secondAttribute="trailing" constant="20" id="Iw3-XL-nM6"/>
+                <constraint firstItem="xhN-92-FmX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="JVh-hg-3OP"/>
+                <constraint firstItem="tyh-ZH-NzP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PgM-XM-odp"/>
+                <constraint firstItem="Xef-LC-QqN" firstAttribute="leading" secondItem="tyh-ZH-NzP" secondAttribute="trailing" constant="9" id="Zo0-bR-OHu"/>
+                <constraint firstItem="Dwg-ye-8Lf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dSa-iR-kZN"/>
+                <constraint firstItem="ZjQ-vO-kRs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="fLu-zn-ipN"/>
+                <constraint firstItem="Dwg-ye-8Lf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ghk-xd-p3a"/>
+                <constraint firstItem="tyh-ZH-NzP" firstAttribute="top" secondItem="ZjQ-vO-kRs" secondAttribute="bottom" constant="55" id="j5m-DL-gHe"/>
+                <constraint firstItem="ZjQ-vO-kRs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jgU-m4-7ts"/>
+                <constraint firstItem="Xef-LC-QqN" firstAttribute="top" secondItem="tyh-ZH-NzP" secondAttribute="top" id="ykT-3X-RjV"/>
             </constraints>
             <point key="canvasLocation" x="35.5" y="161.5"/>
         </view>
     </objects>
     <resources>
+        <image name="mine_baseboard" width="375" height="554"/>
         <image name="mine_iamend" width="20" height="20"/>
         <image name="mine_ibaseboard_02" width="347" height="312"/>
         <image name="mine_ihead_portrait" width="69" height="69"/>
-        <image name="mine_img_top" width="375" height="225"/>
     </resources>
 </document>

@@ -42,37 +42,33 @@
     cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (cell ==nil) {
         cell = [[WLMyMessegeViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
-     
-    
     }
     cell.model = self.modelArray[indexPath.row];
     return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+
+
+}
+
 #pragma mark lazy load
 -(NSArray<WLMyMessegeModel *> *)modelArray{
     if (!_modelArray) {
         NSArray *array = @[@{@"titleLable":@"头像",
-//                             @"subtitleLable":
                              @"imageName":@"head_portrait"},
                            @{@"titleLable":@"昵称",
                              @"subtitleLable":@"王晓明",
-//                             @"imageName":nil
                              },
                            @{@"titleLable":@"手机号码",
                              @"subtitleLable":@"12344",
-//                             @"imageName":nil
                              },
                            @{@"titleLable":@"密码",
                              @"subtitleLable":@"修改",
-//                             @"imageName":nil
                              }
-                           
                            ];
         _modelArray = [WLMyMessegeModel modelArrayWithDictArray:array];
     }
-
     return  _modelArray;
 }
-
-
 @end
