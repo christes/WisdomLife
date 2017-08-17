@@ -10,16 +10,14 @@
 @interface WLMyOredrViewCell()
 /** 订单号 */
 @property (nonatomic ,strong)UILabel *orderNumber;
-/** 查看详情 */
-@property (nonatomic ,strong)UIButton *details;
+
 /** 订单类型 */
 @property (nonatomic ,strong)UILabel *orderType;
 /** 订单日期 */
 @property (nonatomic ,strong)UILabel *orderDate;
 /** 订单金额 */
 @property (nonatomic ,strong)UILabel *orderMoney;
-/** 评价 */
-@property (nonatomic ,strong)UIButton *evaluation;
+
 /** 线 */
 @property (nonatomic ,strong)UIView *line;
 
@@ -141,9 +139,9 @@
     if (!_evaluation) {
         _evaluation = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         _evaluation.titleLabel.font = WL_FONT(13);
-        _evaluation.titleLabel.textColor = WL_COLOR_EVALUATION;
-        [_evaluation setTitle:@"已评价" forState:UIControlStateNormal];
-        [_evaluation setBackgroundImage:[UIImage imageNamed:@"button_03myorder"] forState:UIControlStateNormal];
+        _evaluation.titleLabel.textColor = WL_COLOR_GOEVALUATION;
+        [_evaluation setTitle:@"去评价" forState:UIControlStateNormal];
+        [_evaluation setBackgroundImage:[UIImage imageNamed:@"button_04myorder"] forState:UIControlStateNormal];
     }
     return _evaluation;
 }

@@ -1,22 +1,22 @@
 //
-//  WLHomeViewController.m
+//  WLMyOrderEvaluationController.m
 //  WisdomLife
 //
-//  Created by boundlessocean on 2017/7/22.
+//  Created by boundlessocean on 2017/7/31.
 //  Copyright © 2017年 boundlessocean. All rights reserved.
 //
 
-#import "WLHomeViewController.h"
+#import "WLMyOrderEvaluationController.h"
 
-@interface WLHomeViewController ()
+@interface WLMyOrderEvaluationController ()
 
 @end
 
-@implementation WLHomeViewController
+@implementation WLMyOrderEvaluationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

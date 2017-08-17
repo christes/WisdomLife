@@ -74,8 +74,10 @@ alpha:alphaValue]
 #define WL_COLOR_DATE           WL_RGBCOLOR(153,153,153)
 /** 我的钱包竖线颜色 */
 #define WL_COLOR_TOPANDBOTTOMLINE          WL_RGBCOLOR(238,238,238)
-/** 我的订单评价颜色 */
-#define WL_COLOR_EVALUATION          WL_RGBCOLOR(48,213,56)
+/** 我的订单已评价颜色 */
+#define WL_COLOR_EVALUATION          WL_RGBCOLOR(40,213,56)
+/** 我的订单去评价颜色 */
+#define WL_COLOR_GOEVALUATION          WL_RGBCOLOR(220,16,16)
 /** 底板背景色 */
 #define WL_COLOR_BACKG          WL_HEXCOLOR(0xf6f9fe)
 /** 分割线颜色 */

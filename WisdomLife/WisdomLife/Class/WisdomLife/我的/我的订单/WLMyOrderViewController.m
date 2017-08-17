@@ -31,10 +31,23 @@
     if (cell == nil) {
         cell = [[WLMyOredrViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     }
+    cell.details.tag = indexPath.row;
+    [cell.details addTarget:self action:@selector(didDetails) forControlEvents:UIControlEventTouchUpInside];
+    cell.evaluation.tag = indexPath.row;
+    [cell.evaluation addTarget:self action:@selector(didEvaluation:) forControlEvents:UIControlEventTouchUpInside];
     return cell;
 
 }
 
+- (void)didDetails{
+    
 
+}
+- (void)didEvaluation:(UIButton *)btn{
+    WLMyOredrViewCell *cell = [btn superview];
+   NSIndexPath *indexpath = [_myOrder indexPathForCell:cell];
+    cell.evaluation.titleLabel.text = @"已评价";
+    cell.evaluation.titleLabel.textColor = WL_COLOR_EVALUATION;
+}
 
 @end

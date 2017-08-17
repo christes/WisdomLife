@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8E010B0B1F23375200F3D323 /* WLAppIsNewVersionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E010B0A1F23375200F3D323 /* WLAppIsNewVersionTool.m */; };
+		8E119FCB1F39AA4100647C20 /* WLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FBF1F39AA4100647C20 /* WLHomeViewController.m */; };
+		8E119FCC1F39AA4100647C20 /* WLBigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FC21F39AA4100647C20 /* WLBigModel.m */; };
+		8E119FCD1F39AA4100647C20 /* WLBigView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FC51F39AA4100647C20 /* WLBigView.m */; };
+		8E119FCE1F39AA4100647C20 /* WLPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FC71F39AA4100647C20 /* WLPageView.m */; };
+		8E119FCF1F39AA4100647C20 /* WLPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E119FC81F39AA4100647C20 /* WLPageView.xib */; };
+		8E119FD01F39AA4100647C20 /* WLShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FCA1F39AA4100647C20 /* WLShowView.m */; };
+		8E119FD61F39AAB100647C20 /* WLMessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FD21F39AAB100647C20 /* WLMessageCenterViewController.m */; };
+		8E119FD71F39AAB100647C20 /* WLMessageCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E119FD31F39AAB100647C20 /* WLMessageCenterViewController.xib */; };
+		8E119FD81F39AAB100647C20 /* WLMessageForDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FD51F39AAB100647C20 /* WLMessageForDetailsViewController.m */; };
+		8E119FDB1F39AACE00647C20 /* WLMessageCenterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FDA1F39AACE00647C20 /* WLMessageCenterModel.m */; };
+		8E119FDE1F39AAF500647C20 /* WLMessageCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FDD1F39AAF500647C20 /* WLMessageCenterCell.m */; };
+		8E119FE01F39B47100647C20 /* WLNearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E119FDF1F39B47100647C20 /* WLNearbyViewController.xib */; };
 		8E1840B91F22FCB20005A719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1840B81F22FCB20005A719 /* main.m */; };
 		8E1840BC1F22FCB20005A719 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1840BB1F22FCB20005A719 /* AppDelegate.m */; };
 		8E1840BF1F22FCB20005A719 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1840BE1F22FCB20005A719 /* ViewController.m */; };
@@ -74,11 +86,13 @@
 		8E1843C61F22FD640005A719 /* NMViewRefreshStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1842E31F22FD640005A719 /* NMViewRefreshStatusManager.m */; };
 		8E1843C91F22FD640005A719 /* NMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1842EC1F22FD640005A719 /* NMConst.m */; };
 		8E1843D11F2305850005A719 /* WLUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843D01F2305850005A719 /* WLUserInfoModel.m */; };
-		8E1843D71F230BBB0005A719 /* WLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843D61F230BBB0005A719 /* WLHomeViewController.m */; };
 		8E1843DF1F230CA00005A719 /* WLNearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843DE1F230CA00005A719 /* WLNearbyViewController.m */; };
 		8E1843E21F230CB40005A719 /* WLLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843E11F230CB40005A719 /* WLLifeViewController.m */; };
 		8E1843E91F2313B60005A719 /* WLCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843E81F2313B60005A719 /* WLCollectionViewController.m */; };
 		8E1843EC1F2314F60005A719 /* WLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1843EB1F2314F60005A719 /* WLCollectionViewCell.m */; };
+		8E1D313D1F3ACA1800315392 /* WLLifeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D313C1F3ACA1800315392 /* WLLifeCollectionViewCell.m */; };
+		8E1D31421F3AE67500315392 /* WLLifeCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D31411F3AE67500315392 /* WLLifeCollectionViewCellModel.m */; };
+		8E1D31451F3AF3BB00315392 /* WLLifeFoodPreferenceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D31441F3AF3BB00315392 /* WLLifeFoodPreferenceView.m */; };
 		8E2FC7B81F2849DC0081CD81 /* WLShoppingCarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2FC7B71F2849DC0081CD81 /* WLShoppingCarViewCell.m */; };
 		8E2FC7BB1F284D8D0081CD81 /* WLMyWalletViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2FC7BA1F284D8D0081CD81 /* WLMyWalletViewCell.m */; };
 		8E2FC7BE1F285B3D0081CD81 /* WLMyWalletModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2FC7BD1F285B3D0081CD81 /* WLMyWalletModel.m */; };
@@ -104,6 +118,10 @@
 		8EBB89281F2AF2E300B46B52 /* WLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EBB89271F2AF2E300B46B52 /* WLLoginViewController.xib */; };
 		8EBB892C1F2B302100B46B52 /* WLRegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBB892A1F2B302100B46B52 /* WLRegisteredViewController.m */; };
 		8EBB892D1F2B302100B46B52 /* WLRegisteredViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EBB892B1F2B302100B46B52 /* WLRegisteredViewController.xib */; };
+		8EC5292E1F2EFF25005A3591 /* WLMyOrderEvaluationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC5292C1F2EFF25005A3591 /* WLMyOrderEvaluationController.m */; };
+		8EC5292F1F2EFF25005A3591 /* WLMyOrderEvaluationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EC5292D1F2EFF25005A3591 /* WLMyOrderEvaluationController.xib */; };
+		8EC529431F2F829D005A3591 /* WLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC529421F2F829D005A3591 /* WLLoginView.m */; };
+		8EC529451F2F82A9005A3591 /* WLLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EC529441F2F82A9005A3591 /* WLLoginView.xib */; };
 		FE4AB702D6915646B917EBF0 /* libPods-WisdomLife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED1CC166823B0F324ECC03E /* libPods-WisdomLife.a */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +129,27 @@
 		3ED1CC166823B0F324ECC03E /* libPods-WisdomLife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WisdomLife.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E010B091F23375200F3D323 /* WLAppIsNewVersionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLAppIsNewVersionTool.h; sourceTree = "<group>"; };
 		8E010B0A1F23375200F3D323 /* WLAppIsNewVersionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLAppIsNewVersionTool.m; sourceTree = "<group>"; };
+		8E119FBE1F39AA4100647C20 /* WLHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLHomeViewController.h; sourceTree = "<group>"; };
+		8E119FBF1F39AA4100647C20 /* WLHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLHomeViewController.m; sourceTree = "<group>"; };
+		8E119FC11F39AA4100647C20 /* WLBigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLBigModel.h; sourceTree = "<group>"; };
+		8E119FC21F39AA4100647C20 /* WLBigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBigModel.m; sourceTree = "<group>"; };
+		8E119FC41F39AA4100647C20 /* WLBigView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLBigView.h; sourceTree = "<group>"; };
+		8E119FC51F39AA4100647C20 /* WLBigView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBigView.m; sourceTree = "<group>"; };
+		8E119FC61F39AA4100647C20 /* WLPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLPageView.h; sourceTree = "<group>"; };
+		8E119FC71F39AA4100647C20 /* WLPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLPageView.m; sourceTree = "<group>"; };
+		8E119FC81F39AA4100647C20 /* WLPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLPageView.xib; sourceTree = "<group>"; };
+		8E119FC91F39AA4100647C20 /* WLShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLShowView.h; sourceTree = "<group>"; };
+		8E119FCA1F39AA4100647C20 /* WLShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLShowView.m; sourceTree = "<group>"; };
+		8E119FD11F39AAB100647C20 /* WLMessageCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMessageCenterViewController.h; sourceTree = "<group>"; };
+		8E119FD21F39AAB100647C20 /* WLMessageCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMessageCenterViewController.m; sourceTree = "<group>"; };
+		8E119FD31F39AAB100647C20 /* WLMessageCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMessageCenterViewController.xib; sourceTree = "<group>"; };
+		8E119FD41F39AAB100647C20 /* WLMessageForDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMessageForDetailsViewController.h; sourceTree = "<group>"; };
+		8E119FD51F39AAB100647C20 /* WLMessageForDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMessageForDetailsViewController.m; sourceTree = "<group>"; };
+		8E119FD91F39AACE00647C20 /* WLMessageCenterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMessageCenterModel.h; sourceTree = "<group>"; };
+		8E119FDA1F39AACE00647C20 /* WLMessageCenterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMessageCenterModel.m; sourceTree = "<group>"; };
+		8E119FDC1F39AAF500647C20 /* WLMessageCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMessageCenterCell.h; sourceTree = "<group>"; };
+		8E119FDD1F39AAF500647C20 /* WLMessageCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMessageCenterCell.m; sourceTree = "<group>"; };
+		8E119FDF1F39B47100647C20 /* WLNearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLNearbyViewController.xib; sourceTree = "<group>"; };
 		8E1840B41F22FCB20005A719 /* WisdomLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1840B81F22FCB20005A719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E1840BA1F22FCB20005A719 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -247,8 +286,6 @@
 		8E1843CF1F2305850005A719 /* WLUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLUserInfoModel.h; sourceTree = "<group>"; };
 		8E1843D01F2305850005A719 /* WLUserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLUserInfoModel.m; sourceTree = "<group>"; };
 		8E1843D21F2306E40005A719 /* WLAPIS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAPIS.h; sourceTree = "<group>"; };
-		8E1843D51F230BBB0005A719 /* WLHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLHomeViewController.h; sourceTree = "<group>"; };
-		8E1843D61F230BBB0005A719 /* WLHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLHomeViewController.m; sourceTree = "<group>"; };
 		8E1843DD1F230CA00005A719 /* WLNearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLNearbyViewController.h; sourceTree = "<group>"; };
 		8E1843DE1F230CA00005A719 /* WLNearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLNearbyViewController.m; sourceTree = "<group>"; };
 		8E1843E01F230CB40005A719 /* WLLifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLifeViewController.h; sourceTree = "<group>"; };
@@ -257,6 +294,12 @@
 		8E1843E81F2313B60005A719 /* WLCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewController.m; sourceTree = "<group>"; };
 		8E1843EA1F2314F60005A719 /* WLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectionViewCell.h; sourceTree = "<group>"; };
 		8E1843EB1F2314F60005A719 /* WLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewCell.m; sourceTree = "<group>"; };
+		8E1D313B1F3ACA1800315392 /* WLLifeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLifeCollectionViewCell.h; sourceTree = "<group>"; };
+		8E1D313C1F3ACA1800315392 /* WLLifeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLifeCollectionViewCell.m; sourceTree = "<group>"; };
+		8E1D31401F3AE67500315392 /* WLLifeCollectionViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLifeCollectionViewCellModel.h; sourceTree = "<group>"; };
+		8E1D31411F3AE67500315392 /* WLLifeCollectionViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLifeCollectionViewCellModel.m; sourceTree = "<group>"; };
+		8E1D31431F3AF3BB00315392 /* WLLifeFoodPreferenceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLifeFoodPreferenceView.h; sourceTree = "<group>"; };
+		8E1D31441F3AF3BB00315392 /* WLLifeFoodPreferenceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLifeFoodPreferenceView.m; sourceTree = "<group>"; };
 		8E2FC7B61F2849DC0081CD81 /* WLShoppingCarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLShoppingCarViewCell.h; sourceTree = "<group>"; };
 		8E2FC7B71F2849DC0081CD81 /* WLShoppingCarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLShoppingCarViewCell.m; sourceTree = "<group>"; };
 		8E2FC7B91F284D8D0081CD81 /* WLMyWalletViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyWalletViewCell.h; sourceTree = "<group>"; };
@@ -299,6 +342,12 @@
 		8EBB89291F2B302100B46B52 /* WLRegisteredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRegisteredViewController.h; sourceTree = "<group>"; };
 		8EBB892A1F2B302100B46B52 /* WLRegisteredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRegisteredViewController.m; sourceTree = "<group>"; };
 		8EBB892B1F2B302100B46B52 /* WLRegisteredViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLRegisteredViewController.xib; sourceTree = "<group>"; };
+		8EC5292B1F2EFF25005A3591 /* WLMyOrderEvaluationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyOrderEvaluationController.h; sourceTree = "<group>"; };
+		8EC5292C1F2EFF25005A3591 /* WLMyOrderEvaluationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyOrderEvaluationController.m; sourceTree = "<group>"; };
+		8EC5292D1F2EFF25005A3591 /* WLMyOrderEvaluationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMyOrderEvaluationController.xib; sourceTree = "<group>"; };
+		8EC529411F2F829D005A3591 /* WLLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLoginView.h; sourceTree = "<group>"; };
+		8EC529421F2F829D005A3591 /* WLLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLoginView.m; sourceTree = "<group>"; };
+		8EC529441F2F82A9005A3591 /* WLLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLLoginView.xib; sourceTree = "<group>"; };
 		9F439E4AB66E337237E07458 /* Pods-WisdomLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-WisdomLife/Pods-WisdomLife.release.xcconfig"; sourceTree = "<group>"; };
 		EEFC3D6877B6947FD7C7A997 /* Pods-WisdomLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WisdomLife/Pods-WisdomLife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -321,6 +370,57 @@
 				3ED1CC166823B0F324ECC03E /* libPods-WisdomLife.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E119FBC1F39AA4100647C20 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				8E119FBD1F39AA4100647C20 /* controller */,
+				8E119FC01F39AA4100647C20 /* model */,
+				8E119FC31F39AA4100647C20 /* view */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		8E119FBD1F39AA4100647C20 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E119FD11F39AAB100647C20 /* WLMessageCenterViewController.h */,
+				8E119FD21F39AAB100647C20 /* WLMessageCenterViewController.m */,
+				8E119FD31F39AAB100647C20 /* WLMessageCenterViewController.xib */,
+				8E119FD41F39AAB100647C20 /* WLMessageForDetailsViewController.h */,
+				8E119FD51F39AAB100647C20 /* WLMessageForDetailsViewController.m */,
+				8E119FBE1F39AA4100647C20 /* WLHomeViewController.h */,
+				8E119FBF1F39AA4100647C20 /* WLHomeViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		8E119FC01F39AA4100647C20 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8E119FC11F39AA4100647C20 /* WLBigModel.h */,
+				8E119FC21F39AA4100647C20 /* WLBigModel.m */,
+				8E119FD91F39AACE00647C20 /* WLMessageCenterModel.h */,
+				8E119FDA1F39AACE00647C20 /* WLMessageCenterModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8E119FC31F39AA4100647C20 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8E119FDC1F39AAF500647C20 /* WLMessageCenterCell.h */,
+				8E119FDD1F39AAF500647C20 /* WLMessageCenterCell.m */,
+				8E119FC41F39AA4100647C20 /* WLBigView.h */,
+				8E119FC51F39AA4100647C20 /* WLBigView.m */,
+				8E119FC61F39AA4100647C20 /* WLPageView.h */,
+				8E119FC71F39AA4100647C20 /* WLPageView.m */,
+				8E119FC81F39AA4100647C20 /* WLPageView.xib */,
+				8E119FC91F39AA4100647C20 /* WLShowView.h */,
+				8E119FCA1F39AA4100647C20 /* WLShowView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		8E1840AB1F22FCB20005A719 = {
@@ -816,9 +916,9 @@
 		8E1843D31F230B190005A719 /* WisdomLife */ = {
 			isa = PBXGroup;
 			children = (
+				8E119FBC1F39AA4100647C20 /* 首页 */,
 				8EB581121F2493BD0097E34B /* 登录 */,
 				8E1843E61F2313940005A719 /* 引导页 */,
-				8E1843D41F230B2B0005A719 /* 首页 */,
 				8E1843D81F230BDD0005A719 /* 附近 */,
 				8E1843DC1F230C660005A719 /* 惠生活 */,
 				8E1843DB1F230C570005A719 /* 我的 */,
@@ -826,20 +926,12 @@
 			path = WisdomLife;
 			sourceTree = "<group>";
 		};
-		8E1843D41F230B2B0005A719 /* 首页 */ = {
-			isa = PBXGroup;
-			children = (
-				8E1843D51F230BBB0005A719 /* WLHomeViewController.h */,
-				8E1843D61F230BBB0005A719 /* WLHomeViewController.m */,
-			);
-			path = "首页";
-			sourceTree = "<group>";
-		};
 		8E1843D81F230BDD0005A719 /* 附近 */ = {
 			isa = PBXGroup;
 			children = (
 				8E1843DD1F230CA00005A719 /* WLNearbyViewController.h */,
 				8E1843DE1F230CA00005A719 /* WLNearbyViewController.m */,
+				8E119FDF1F39B47100647C20 /* WLNearbyViewController.xib */,
 			);
 			path = "附近";
 			sourceTree = "<group>";
@@ -868,6 +960,12 @@
 			children = (
 				8E1843E01F230CB40005A719 /* WLLifeViewController.h */,
 				8E1843E11F230CB40005A719 /* WLLifeViewController.m */,
+				8E1D313B1F3ACA1800315392 /* WLLifeCollectionViewCell.h */,
+				8E1D313C1F3ACA1800315392 /* WLLifeCollectionViewCell.m */,
+				8E1D31401F3AE67500315392 /* WLLifeCollectionViewCellModel.h */,
+				8E1D31411F3AE67500315392 /* WLLifeCollectionViewCellModel.m */,
+				8E1D31431F3AF3BB00315392 /* WLLifeFoodPreferenceView.h */,
+				8E1D31441F3AF3BB00315392 /* WLLifeFoodPreferenceView.m */,
 			);
 			path = "惠生活";
 			sourceTree = "<group>";
@@ -931,6 +1029,9 @@
 				8E2FC7C11F28A05D0081CD81 /* WLMyOrderViewController.xib */,
 				8E2FC7C41F29AFCB0081CD81 /* WLMyOredrViewCell.h */,
 				8E2FC7C51F29AFCB0081CD81 /* WLMyOredrViewCell.m */,
+				8EC5292B1F2EFF25005A3591 /* WLMyOrderEvaluationController.h */,
+				8EC5292C1F2EFF25005A3591 /* WLMyOrderEvaluationController.m */,
+				8EC5292D1F2EFF25005A3591 /* WLMyOrderEvaluationController.xib */,
 			);
 			path = "我的订单";
 			sourceTree = "<group>";
@@ -958,6 +1059,9 @@
 				8EBB89291F2B302100B46B52 /* WLRegisteredViewController.h */,
 				8EBB892A1F2B302100B46B52 /* WLRegisteredViewController.m */,
 				8EBB892B1F2B302100B46B52 /* WLRegisteredViewController.xib */,
+				8EC529411F2F829D005A3591 /* WLLoginView.h */,
+				8EC529421F2F829D005A3591 /* WLLoginView.m */,
+				8EC529441F2F82A9005A3591 /* WLLoginView.xib */,
 			);
 			path = "登录";
 			sourceTree = "<group>";
@@ -1036,13 +1140,18 @@
 			files = (
 				8EB5810E1F2467B30097E34B /* WLMineViewController.xib in Resources */,
 				8E8C46AD1F25E7C20053AB43 /* WLShoppingCartViewController.xib in Resources */,
+				8E119FD71F39AAB100647C20 /* WLMessageCenterViewController.xib in Resources */,
 				8E1840C71F22FCB20005A719 /* LaunchScreen.storyboard in Resources */,
 				8E1840C41F22FCB20005A719 /* Assets.xcassets in Resources */,
+				8E119FCF1F39AA4100647C20 /* WLPageView.xib in Resources */,
 				8E8C46A01F25CE8E0053AB43 /* WLMyWalletViewController.xib in Resources */,
+				8EC5292F1F2EFF25005A3591 /* WLMyOrderEvaluationController.xib in Resources */,
 				8E2FC7C31F28A05D0081CD81 /* WLMyOrderViewController.xib in Resources */,
 				8E8C46951F25CD9E0053AB43 /* WLMyMessageViewController.xib in Resources */,
 				8EBB892D1F2B302100B46B52 /* WLRegisteredViewController.xib in Resources */,
 				8EBB89281F2AF2E300B46B52 /* WLLoginViewController.xib in Resources */,
+				8EC529451F2F82A9005A3591 /* WLLoginView.xib in Resources */,
+				8E119FE01F39B47100647C20 /* WLNearbyViewController.xib in Resources */,
 				8E63A1461F26F38F00430A1A /* WLCardController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1115,7 +1224,6 @@
 				8E1843A91F22FD640005A719 /* NSNull+Exception.m in Sources */,
 				8E1843A51F22FD640005A719 /* NSArray+NSRangeException.m in Sources */,
 				8E1843131F22FD640005A719 /* WLBaseModel.m in Sources */,
-				8E1843D71F230BBB0005A719 /* WLHomeViewController.m in Sources */,
 				8E1843A61F22FD640005A719 /* NSDictionary+NSRangeException.m in Sources */,
 				8E1842FE1F22FD640005A719 /* NSTimer+BLBlock.m in Sources */,
 				8E1843D11F2305850005A719 /* WLUserInfoModel.m in Sources */,
@@ -1123,6 +1231,7 @@
 				8E1843021F22FD640005A719 /* UIImage+Cut.m in Sources */,
 				8E1842F01F22FD640005A719 /* NMAPPConfigure.m in Sources */,
 				8EB581171F2494110097E34B /* WLLoginViewController.m in Sources */,
+				8E119FCD1F39AA4100647C20 /* WLBigView.m in Sources */,
 				8E18430B1F22FD640005A719 /* MBProgressHUD+Addition.m in Sources */,
 				8E1843071F22FD640005A719 /* UILabel+LineAndWordSpace.m in Sources */,
 				8E1843011F22FD640005A719 /* UIImage+Addition.m in Sources */,
@@ -1130,10 +1239,14 @@
 				8E1843051F22FD640005A719 /* UIImageView+LBBlurredImage.m in Sources */,
 				8E1843DF1F230CA00005A719 /* WLNearbyViewController.m in Sources */,
 				8E1842FB1F22FD640005A719 /* NSString+Encrypt.m in Sources */,
+				8E119FD01F39AA4100647C20 /* WLShowView.m in Sources */,
 				8E8C46941F25CD9E0053AB43 /* WLMyMessageViewController.m in Sources */,
+				8E1D31451F3AF3BB00315392 /* WLLifeFoodPreferenceView.m in Sources */,
 				8E1842F71F22FD640005A719 /* NSObject+GCD.m in Sources */,
 				8E1842F31F22FD640005A719 /* NSDate+Addition.m in Sources */,
+				8E119FDE1F39AAF500647C20 /* WLMessageCenterCell.m in Sources */,
 				8EB5810D1F2467B30097E34B /* WLMineViewController.m in Sources */,
+				8E119FCC1F39AA4100647C20 /* WLBigModel.m in Sources */,
 				8E1842F21F22FD640005A719 /* NSArray+Addition.m in Sources */,
 				8E1842F51F22FD640005A719 /* NSFileManager+Paths.m in Sources */,
 				8E1843AA1F22FD640005A719 /* NSObject+Swizzling.m in Sources */,
@@ -1143,6 +1256,7 @@
 				8E1843B21F22FD640005A719 /* NMGradientLabel.m in Sources */,
 				8E8C46971F25CD9E0053AB43 /* WLMyMessegeViewCell.m in Sources */,
 				8E1842FA1F22FD640005A719 /* NSString+Category.m in Sources */,
+				8E119FDB1F39AACE00647C20 /* WLMessageCenterModel.m in Sources */,
 				8E1842F11F22FD640005A719 /* NMAPPContext.m in Sources */,
 				8E1842FD1F22FD640005A719 /* NSString+Size.m in Sources */,
 				8E1843151F22FD640005A719 /* WLBaseVC.m in Sources */,
@@ -1151,8 +1265,10 @@
 				8E1843AE1F22FD640005A719 /* NMEmptyDataDataSource.m in Sources */,
 				8E1843171F22FD640005A719 /* NMNavigationVC.m in Sources */,
 				8E8C46961F25CD9E0053AB43 /* WLMyMessegeModel.m in Sources */,
+				8E1D313D1F3ACA1800315392 /* WLLifeCollectionViewCell.m in Sources */,
 				8E2FC7BE1F285B3D0081CD81 /* WLMyWalletModel.m in Sources */,
 				8E1843E21F230CB40005A719 /* WLLifeViewController.m in Sources */,
+				8EC529431F2F829D005A3591 /* WLLoginView.m in Sources */,
 				8E18430D1F22FD640005A719 /* UIView+Frame.m in Sources */,
 				8E1843031F22FD640005A719 /* UIImage+ImageEffects.m in Sources */,
 				8E1843AB1F22FD640005A719 /* NSString+NSRangeException.m in Sources */,
@@ -1161,8 +1277,13 @@
 				8E1842F91F22FD640005A719 /* NSAttributedString+Size.m in Sources */,
 				8E1842F81F22FD640005A719 /* NSObject+Runtime.m in Sources */,
 				8E1843C31F22FD640005A719 /* NMUserInfoManager.m in Sources */,
+				8E119FD61F39AAB100647C20 /* WLMessageCenterViewController.m in Sources */,
+				8E119FCB1F39AA4100647C20 /* WLHomeViewController.m in Sources */,
+				8E119FCE1F39AA4100647C20 /* WLPageView.m in Sources */,
+				8EC5292E1F2EFF25005A3591 /* WLMyOrderEvaluationController.m in Sources */,
 				8E1843B31F22FD640005A719 /* NMHUDManager.m in Sources */,
 				8E1843B81F22FD640005A719 /* NMLocationManager.m in Sources */,
+				8E119FD81F39AAB100647C20 /* WLMessageForDetailsViewController.m in Sources */,
 				8E1843091F22FD640005A719 /* UISwitch+BLBlock.m in Sources */,
 				8E1843C91F22FD640005A719 /* NMConst.m in Sources */,
 				8E2FC7C21F28A05D0081CD81 /* WLMyOrderViewController.m in Sources */,
@@ -1174,6 +1295,7 @@
 				8E18430E1F22FD640005A719 /* UIView+Layer.m in Sources */,
 				8EB581111F248D3D0097E34B /* WLMineViewCell.m in Sources */,
 				8E1843111F22FD640005A719 /* UIViewController+NMAdd.m in Sources */,
+				8E1D31421F3AE67500315392 /* WLLifeCollectionViewCellModel.m in Sources */,
 				8E1842F61F22FD640005A719 /* NSObject+AddProperty.m in Sources */,
 				8E63A1491F26F40900430A1A /* WLCardCell.m in Sources */,
 				8E1843041F22FD640005A719 /* UIImageView+Addition.m in Sources */,

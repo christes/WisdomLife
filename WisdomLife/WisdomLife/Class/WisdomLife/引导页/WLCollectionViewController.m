@@ -126,7 +126,6 @@ static NSString * const reuseIdentifier = @"Cell";
         [_startBtn setTitle:@"立即体验" forState:UIControlStateNormal];
         _startBtn.hidden = YES;
           [_startBtn addTarget:self action:@selector(didStartBtn) forControlEvents:UIControlEventTouchUpInside];
-        
     }
     return  _startBtn;
 }

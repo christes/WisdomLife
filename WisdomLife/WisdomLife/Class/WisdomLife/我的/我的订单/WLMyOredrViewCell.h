@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface WLMyOredrViewCell : UITableViewCell
-
+/** 查看详情 */
+@property (nonatomic ,strong)UIButton *details;
+/** 评价 */
+@property (nonatomic ,strong)UIButton *evaluation;
 @end

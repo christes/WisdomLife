@@ -75,7 +75,18 @@
     _ForgotPwd.titleLabel.textColor = WL_COLOR_THEME;
 }
 
-
+//- (void)loginButtonClickedCallBack{
+//    if (_phoneNumer.length != 11) {
+//        [xxx  showMessage:@"请输入正确手机号"];
+//    }
+//    
+//    [netWorkManger postRequestURL:loginURL xxxx  filinish{
+//        [xxx  showMessage:@"登录成功"];
+//    } fail{
+//        [xxx  showMessage:@"登录失败"];
+//    }]
+//    
+//}
 
 
 
