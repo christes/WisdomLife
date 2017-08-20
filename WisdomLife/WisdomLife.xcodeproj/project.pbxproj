@@ -16,7 +16,6 @@
 		8E119FD01F39AA4100647C20 /* WLShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FCA1F39AA4100647C20 /* WLShowView.m */; };
 		8E119FD61F39AAB100647C20 /* WLMessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FD21F39AAB100647C20 /* WLMessageCenterViewController.m */; };
 		8E119FD71F39AAB100647C20 /* WLMessageCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E119FD31F39AAB100647C20 /* WLMessageCenterViewController.xib */; };
-		8E119FD81F39AAB100647C20 /* WLMessageForDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FD51F39AAB100647C20 /* WLMessageForDetailsViewController.m */; };
 		8E119FDB1F39AACE00647C20 /* WLMessageCenterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FDA1F39AACE00647C20 /* WLMessageCenterModel.m */; };
 		8E119FDE1F39AAF500647C20 /* WLMessageCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E119FDD1F39AAF500647C20 /* WLMessageCenterCell.m */; };
 		8E119FE01F39B47100647C20 /* WLNearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E119FDF1F39B47100647C20 /* WLNearbyViewController.xib */; };
@@ -122,6 +121,10 @@
 		8EC5292F1F2EFF25005A3591 /* WLMyOrderEvaluationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EC5292D1F2EFF25005A3591 /* WLMyOrderEvaluationController.xib */; };
 		8EC529431F2F829D005A3591 /* WLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC529421F2F829D005A3591 /* WLLoginView.m */; };
 		8EC529451F2F82A9005A3591 /* WLLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EC529441F2F82A9005A3591 /* WLLoginView.xib */; };
+		8ECC87A51F4834B900ADA608 /* WLMessageForDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC87A31F4834B900ADA608 /* WLMessageForDetailsViewController.m */; };
+		8ECC87A61F4834B900ADA608 /* WLMessageForDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ECC87A41F4834B900ADA608 /* WLMessageForDetailsViewController.xib */; };
+		8ECC87AA1F48355A00ADA608 /* WLDetailMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC87A81F48355A00ADA608 /* WLDetailMessageCell.m */; };
+		8ECC87AB1F48355A00ADA608 /* WLDetailMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ECC87A91F48355A00ADA608 /* WLDetailMessageCell.xib */; };
 		FE4AB702D6915646B917EBF0 /* libPods-WisdomLife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED1CC166823B0F324ECC03E /* libPods-WisdomLife.a */; };
 /* End PBXBuildFile section */
 
@@ -143,8 +146,6 @@
 		8E119FD11F39AAB100647C20 /* WLMessageCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMessageCenterViewController.h; sourceTree = "<group>"; };
 		8E119FD21F39AAB100647C20 /* WLMessageCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMessageCenterViewController.m; sourceTree = "<group>"; };
 		8E119FD31F39AAB100647C20 /* WLMessageCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMessageCenterViewController.xib; sourceTree = "<group>"; };
-		8E119FD41F39AAB100647C20 /* WLMessageForDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMessageForDetailsViewController.h; sourceTree = "<group>"; };
-		8E119FD51F39AAB100647C20 /* WLMessageForDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMessageForDetailsViewController.m; sourceTree = "<group>"; };
 		8E119FD91F39AACE00647C20 /* WLMessageCenterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMessageCenterModel.h; sourceTree = "<group>"; };
 		8E119FDA1F39AACE00647C20 /* WLMessageCenterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMessageCenterModel.m; sourceTree = "<group>"; };
 		8E119FDC1F39AAF500647C20 /* WLMessageCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMessageCenterCell.h; sourceTree = "<group>"; };
@@ -348,6 +349,12 @@
 		8EC529411F2F829D005A3591 /* WLLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLoginView.h; sourceTree = "<group>"; };
 		8EC529421F2F829D005A3591 /* WLLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLoginView.m; sourceTree = "<group>"; };
 		8EC529441F2F82A9005A3591 /* WLLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLLoginView.xib; sourceTree = "<group>"; };
+		8ECC87A21F4834B900ADA608 /* WLMessageForDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMessageForDetailsViewController.h; sourceTree = "<group>"; };
+		8ECC87A31F4834B900ADA608 /* WLMessageForDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMessageForDetailsViewController.m; sourceTree = "<group>"; };
+		8ECC87A41F4834B900ADA608 /* WLMessageForDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMessageForDetailsViewController.xib; sourceTree = "<group>"; };
+		8ECC87A71F48355A00ADA608 /* WLDetailMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLDetailMessageCell.h; sourceTree = "<group>"; };
+		8ECC87A81F48355A00ADA608 /* WLDetailMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLDetailMessageCell.m; sourceTree = "<group>"; };
+		8ECC87A91F48355A00ADA608 /* WLDetailMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLDetailMessageCell.xib; sourceTree = "<group>"; };
 		9F439E4AB66E337237E07458 /* Pods-WisdomLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-WisdomLife/Pods-WisdomLife.release.xcconfig"; sourceTree = "<group>"; };
 		EEFC3D6877B6947FD7C7A997 /* Pods-WisdomLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WisdomLife/Pods-WisdomLife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -388,10 +395,11 @@
 				8E119FD11F39AAB100647C20 /* WLMessageCenterViewController.h */,
 				8E119FD21F39AAB100647C20 /* WLMessageCenterViewController.m */,
 				8E119FD31F39AAB100647C20 /* WLMessageCenterViewController.xib */,
-				8E119FD41F39AAB100647C20 /* WLMessageForDetailsViewController.h */,
-				8E119FD51F39AAB100647C20 /* WLMessageForDetailsViewController.m */,
 				8E119FBE1F39AA4100647C20 /* WLHomeViewController.h */,
 				8E119FBF1F39AA4100647C20 /* WLHomeViewController.m */,
+				8ECC87A21F4834B900ADA608 /* WLMessageForDetailsViewController.h */,
+				8ECC87A31F4834B900ADA608 /* WLMessageForDetailsViewController.m */,
+				8ECC87A41F4834B900ADA608 /* WLMessageForDetailsViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -419,6 +427,9 @@
 				8E119FC81F39AA4100647C20 /* WLPageView.xib */,
 				8E119FC91F39AA4100647C20 /* WLShowView.h */,
 				8E119FCA1F39AA4100647C20 /* WLShowView.m */,
+				8ECC87A71F48355A00ADA608 /* WLDetailMessageCell.h */,
+				8ECC87A81F48355A00ADA608 /* WLDetailMessageCell.m */,
+				8ECC87A91F48355A00ADA608 /* WLDetailMessageCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1148,6 +1159,8 @@
 				8EC5292F1F2EFF25005A3591 /* WLMyOrderEvaluationController.xib in Resources */,
 				8E2FC7C31F28A05D0081CD81 /* WLMyOrderViewController.xib in Resources */,
 				8E8C46951F25CD9E0053AB43 /* WLMyMessageViewController.xib in Resources */,
+				8ECC87AB1F48355A00ADA608 /* WLDetailMessageCell.xib in Resources */,
+				8ECC87A61F4834B900ADA608 /* WLMessageForDetailsViewController.xib in Resources */,
 				8EBB892D1F2B302100B46B52 /* WLRegisteredViewController.xib in Resources */,
 				8EBB89281F2AF2E300B46B52 /* WLLoginViewController.xib in Resources */,
 				8EC529451F2F82A9005A3591 /* WLLoginView.xib in Resources */,
@@ -1282,14 +1295,15 @@
 				8E119FCE1F39AA4100647C20 /* WLPageView.m in Sources */,
 				8EC5292E1F2EFF25005A3591 /* WLMyOrderEvaluationController.m in Sources */,
 				8E1843B31F22FD640005A719 /* NMHUDManager.m in Sources */,
+				8ECC87AA1F48355A00ADA608 /* WLDetailMessageCell.m in Sources */,
 				8E1843B81F22FD640005A719 /* NMLocationManager.m in Sources */,
-				8E119FD81F39AAB100647C20 /* WLMessageForDetailsViewController.m in Sources */,
 				8E1843091F22FD640005A719 /* UISwitch+BLBlock.m in Sources */,
 				8E1843C91F22FD640005A719 /* NMConst.m in Sources */,
 				8E2FC7C21F28A05D0081CD81 /* WLMyOrderViewController.m in Sources */,
 				8E1840BC1F22FCB20005A719 /* AppDelegate.m in Sources */,
 				8E1843AC1F22FD640005A719 /* UINavigationController+Consistent.m in Sources */,
 				8E1843191F22FD640005A719 /* NMTabBarVC.m in Sources */,
+				8ECC87A51F4834B900ADA608 /* WLMessageForDetailsViewController.m in Sources */,
 				8E1843EC1F2314F60005A719 /* WLCollectionViewCell.m in Sources */,
 				8E8C46AC1F25E7C20053AB43 /* WLShoppingCartViewController.m in Sources */,
 				8E18430E1F22FD640005A719 /* UIView+Layer.m in Sources */,

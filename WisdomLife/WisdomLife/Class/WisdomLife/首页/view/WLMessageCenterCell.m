@@ -55,7 +55,7 @@
      [self addSubview:self.messageType];
      [self addSubview:self.date];
      [self addSubview:self.time];
-     [self addSubview:self.line];
+//     [self addSubview:self.line];
      [self addSubview:self.accessoryImageView];
 }
 /** 设置约束 */
@@ -67,36 +67,37 @@
     }];
     [_messageContent mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(_iconImageView.mas_right).offset(WL_WIDTH(10));
-          make.top.mas_equalTo(_messageType.mas_bottom).offset(WL_HEIGHT(5));
+//          make.top.mas_equalTo(_messageType.mas_bottom).offset(WL_HEIGHT(5));
+        make.centerY.mas_equalTo(self);
         make.right.mas_equalTo(self).offset(WL_WIDTH(-25));
     }];
 
     [_messageType mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(_iconImageView.mas_right).offset(WL_WIDTH(10));
-        make.top.mas_equalTo(self).offset(WL_HEIGHT(11));
+        make.bottom.mas_equalTo(_messageContent.mas_top).offset(WL_HEIGHT(-2));
     }];
 
     [_date mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(_iconImageView.mas_right).offset(WL_WIDTH(10));
-        make.top.mas_equalTo(_messageContent.mas_bottom).offset(WL_HEIGHT(7));
+        make.top.mas_equalTo(_messageContent.mas_bottom).offset(WL_HEIGHT(5));
     }];
 
     [_time mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(_date.mas_right).offset(WL_WIDTH(15));
-        make.top.mas_equalTo(_messageContent.mas_bottom).offset(WL_HEIGHT(7));
+        make.top.mas_equalTo(_messageContent.mas_bottom).offset(WL_HEIGHT(5));
     }];
 
     [_accessoryImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(self).offset(WL_WIDTH(-10));
+        make.right.mas_equalTo(self).offset(WL_WIDTH(-15));
         make.centerY.mas_equalTo(self.mas_centerY);
     }];
 
-    [_line mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self);
-        make.right.mas_equalTo(self);
-        make.bottom.mas_equalTo(0);
-        make.height.mas_equalTo(WL_HEIGHT(0.5));
-    }];
+//    [_line mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(self);
+//        make.right.mas_equalTo(self);
+//        make.bottom.mas_equalTo(0);
+//        make.height.mas_equalTo(WL_HEIGHT(0.5));
+//    }];
 
 }
 
@@ -106,6 +107,7 @@
 -(UIImageView *)iconImageView{
     if (!_iconImageView) {
         _iconImageView = [[UIImageView alloc] init];
+        _iconImageView.userInteractionEnabled = YES;
     }
     return _iconImageView;
 }

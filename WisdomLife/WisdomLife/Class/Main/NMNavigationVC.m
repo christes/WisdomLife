@@ -55,7 +55,7 @@
         
         viewController.navigationItem.leftBarButtonItem = backBarButtonItem;
         // 隐藏tabbar
-//        viewController.hidesBottomBarWhenPushed         = YES;
+        viewController.hidesBottomBarWhenPushed         = YES;
         if ([viewController respondsToSelector:@selector(canDragBack)]) {
             _canDragBack = viewController.canDragBack;
         }else{

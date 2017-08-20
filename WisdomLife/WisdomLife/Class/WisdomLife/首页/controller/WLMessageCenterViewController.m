@@ -7,6 +7,7 @@
 //
 
 #import "WLMessageCenterViewController.h"
+#import "WLMessageForDetailsViewController.h"
 #import "WLMessageCenterModel.h"
 #import "WLMessageCenterCell.h"
 
@@ -39,10 +40,13 @@
     cell.model = self.modelArray[indexPath.row];
     return cell;
 }
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    [self.navigationController pushViewController:[WLMessageForDetailsViewController new] animated:YES];
 
 }
+
 
 #pragma mark lazy load
 -(NSArray<WLMessageCenterModel *> *)modelArray{
