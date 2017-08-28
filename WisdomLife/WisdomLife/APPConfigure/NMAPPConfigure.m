@@ -11,6 +11,7 @@
 #import "NMFileCacheManager.h"
 #import "WLAppIsNewVersionTool.h"
 #import "WLCollectionViewController.h"
+#import "WLLoginViewController.h"
 @interface NMAPPConfigure ()
 @end
 

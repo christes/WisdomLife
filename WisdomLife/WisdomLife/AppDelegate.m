@@ -28,7 +28,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     self.window.rootViewController = [self getRootViewController];
-    
+    [NMAPPConfigure configureAPIDOMAIN];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -39,6 +39,8 @@
  获取根控制器
  */
 - (UIViewController *)getRootViewController {
+    
+    return [WLLoginViewController new];
     BOOL isNewVersion = [WLAppIsNewVersionTool appIsNewVersion];
     if (isNewVersion) {
         WLCollectionViewController *newFeature = [WLCollectionViewController new];

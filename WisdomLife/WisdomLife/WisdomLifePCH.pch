@@ -19,4 +19,6 @@
 #import "NMHUDManager.h"
 #import "NMBaseAPIModel.h"
 #import "Masonry.h"
+#import "NMNetworkManager.h"
+#import "WLAPIS.h"
 #endif /* WisdomLifePCH_pch */

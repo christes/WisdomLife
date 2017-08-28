@@ -70,4 +70,4 @@ NSString * const kNMAPIDOMAIN1 = @"http://lifefair.ngrok.cc/nm-mobile-app-server
 NSString * const kNMAPIDOMAIN2 = @"http://192.168.2.194/nm-mobile-app-server/";
 NSString * const kNMAPIDOMAIN3 = @"http://192.168.3.108:7001/app/";
 NSString * const kNMAPIDOMAIN4 = @"http://120.26.5.204:7001/";
-NSString * const kNMAPIDOMAIN5 = @"http://120.25.150.9:7001/";
+NSString * const kNMAPIDOMAIN5 = @"http://192.168.3.222:8180/";

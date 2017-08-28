@@ -8,7 +8,7 @@
 
 #import "WLLoginViewController.h"
 #import "WLRegisteredViewController.h"
-
+#import "WLForgetPWDViewController.h"
 @interface WLLoginViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *account;
 @property (strong, nonatomic) IBOutlet UITextField *pwd;
@@ -75,7 +75,7 @@
     _ForgotPwd.titleLabel.textColor = WL_COLOR_THEME;
 }
 
-//- (void)loginButtonClickedCallBack{
+- (void)loginButtonClickedCallBack{
 //    if (_phoneNumer.length != 11) {
 //        [xxx  showMessage:@"请输入正确手机号"];
 //    }
@@ -85,9 +85,28 @@
 //    } fail{
 //        [xxx  showMessage:@"登录失败"];
 //    }]
-//    
-//}
+}
 
+- (IBAction)forgetPassWord:(id)sender {
+//    [self presentViewController:[WLForgetPWDViewController new] animated:YES completion:nil];
+    NSDictionary *parameters = @{@"moblNo" : @"18011521514",
+                                 @"passWord" : @"99999999",
+                                 @"pwd" : @"99999999",
+                                 @"type" : @"update"};
+    NSString *jsonString = [NSString jsonWithObject:parameters];
+    [[NMNetworkManager defaultManager] postWithUrlString:WL_API_APPLY_CHANGEPWD
+                                            inParameters:@{@"userInfo":jsonString}
+                                                finished:^(NSURLResponse *response,
+                                                           id responseObject,
+                                                           NSError *error) {
+                                                    
+                                                }];
+    
+}
 
+- (IBAction)loginClick:(id)sender {
+    
+    
+}
 
 @end

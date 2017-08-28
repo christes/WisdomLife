@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class NMUserInfoModel;
+@class WLUserInfoModel;
 @interface NMUserInfoManager : NSObject
 + (instancetype)sharedManager;
 
@@ -24,12 +24,12 @@
 /**
  *  获取用户信息
  */
-- (NMUserInfoModel *)currentUserInfo;
+- (WLUserInfoModel *)currentUserInfo;
 
 /**
  *  更新缓存中的用户信息
  */
-- (void)resetUserInfoWithUserInfo:(NMUserInfoModel *)userInfo;
+- (void)resetUserInfoWithUserInfo:(WLUserInfoModel *)userInfo;
 
 /**
  *  用来记录是否是登陆状态

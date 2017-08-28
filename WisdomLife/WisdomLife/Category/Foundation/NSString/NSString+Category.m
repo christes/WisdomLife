@@ -188,4 +188,13 @@
     return returnValue;
 }
 
++ (NSString *)jsonWithObject:(id)object{
+    
+    NSString *jsonString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:object
+                                                                                          options:NSJSONWritingPrettyPrinted
+                                                                                            error:nil]
+                                                 encoding:NSUTF8StringEncoding];
+    return jsonString;
+}
+
 @end

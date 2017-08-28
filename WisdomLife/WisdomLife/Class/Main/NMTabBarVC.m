@@ -8,6 +8,8 @@
 
 #import "NMTabBarVC.h"
 #import "NMNavigationVC.h"
+#import "NMUserInfoManager.h"
+#import "WLLoginViewController.h"
 @interface NMTabBarVC ()
 @end
 @implementation NMTabBarVC
@@ -22,7 +24,9 @@
     [self addChildViewControllerWithClassname:@"WLNearbyViewController" imagename:@"nearby" title:@"附近"];
     [self addChildViewControllerWithClassname:@"WLLifeViewController" imagename:@"live" title:@"惠生活"];
     [self addChildViewControllerWithClassname:@"WLMineViewController" imagename:@"mine" title:@"我的"];
-    
+    if ([[NMUserInfoManager sharedManager] currentUserInfo] == nil) {
+        [self presentViewController:[WLLoginViewController new] animated:YES completion:nil];
+    }
 }
 
 #pragma mark - - 添加控制器

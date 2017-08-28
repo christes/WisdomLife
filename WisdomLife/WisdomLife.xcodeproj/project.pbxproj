@@ -21,7 +21,6 @@
 		8E119FE01F39B47100647C20 /* WLNearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E119FDF1F39B47100647C20 /* WLNearbyViewController.xib */; };
 		8E1840B91F22FCB20005A719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1840B81F22FCB20005A719 /* main.m */; };
 		8E1840BC1F22FCB20005A719 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1840BB1F22FCB20005A719 /* AppDelegate.m */; };
-		8E1840BF1F22FCB20005A719 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1840BE1F22FCB20005A719 /* ViewController.m */; };
 		8E1840C41F22FCB20005A719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1840C31F22FCB20005A719 /* Assets.xcassets */; };
 		8E1840C71F22FCB20005A719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1840C51F22FCB20005A719 /* LaunchScreen.storyboard */; };
 		8E1842F01F22FD640005A719 /* NMAPPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1840D91F22FD630005A719 /* NMAPPConfigure.m */; };
@@ -98,6 +97,11 @@
 		8E2FC7C21F28A05D0081CD81 /* WLMyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2FC7C01F28A05D0081CD81 /* WLMyOrderViewController.m */; };
 		8E2FC7C31F28A05D0081CD81 /* WLMyOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2FC7C11F28A05D0081CD81 /* WLMyOrderViewController.xib */; };
 		8E2FC7C61F29AFCB0081CD81 /* WLMyOredrViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2FC7C51F29AFCB0081CD81 /* WLMyOredrViewCell.m */; };
+		8E4632161F529B4500947198 /* NMHTTPRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4632111F529B4500947198 /* NMHTTPRequestSerializer.m */; };
+		8E4632171F529B4500947198 /* NMJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4632131F529B4500947198 /* NMJSONResponseSerializer.m */; };
+		8E4632181F529B4500947198 /* NMNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4632151F529B4500947198 /* NMNetworkManager.m */; };
+		8E46321E1F52BE3000947198 /* WLForgetPWDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E46321C1F52BE3000947198 /* WLForgetPWDViewController.xib */; };
+		8E4632241F52C12000947198 /* WLForgetPWDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4632231F52C12000947198 /* WLForgetPWDViewController.m */; };
 		8E63A1451F26F38F00430A1A /* WLCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E63A1431F26F38F00430A1A /* WLCardController.m */; };
 		8E63A1461F26F38F00430A1A /* WLCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E63A1441F26F38F00430A1A /* WLCardController.xib */; };
 		8E63A1491F26F40900430A1A /* WLCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E63A1481F26F40900430A1A /* WLCardCell.m */; };
@@ -153,10 +157,8 @@
 		8E119FDF1F39B47100647C20 /* WLNearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLNearbyViewController.xib; sourceTree = "<group>"; };
 		8E1840B41F22FCB20005A719 /* WisdomLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1840B81F22FCB20005A719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8E1840BA1F22FCB20005A719 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8E1840BB1F22FCB20005A719 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8E1840BD1F22FCB20005A719 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8E1840BE1F22FCB20005A719 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8E1840BA1F22FCB20005A719 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		8E1840BB1F22FCB20005A719 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		8E1840C31F22FCB20005A719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E1840C61F22FCB20005A719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E1840C81F22FCB20005A719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -312,6 +314,16 @@
 		8E2FC7C11F28A05D0081CD81 /* WLMyOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLMyOrderViewController.xib; sourceTree = "<group>"; };
 		8E2FC7C41F29AFCB0081CD81 /* WLMyOredrViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMyOredrViewCell.h; sourceTree = "<group>"; };
 		8E2FC7C51F29AFCB0081CD81 /* WLMyOredrViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMyOredrViewCell.m; sourceTree = "<group>"; };
+		8E4632101F529B4500947198 /* NMHTTPRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMHTTPRequestSerializer.h; sourceTree = "<group>"; };
+		8E4632111F529B4500947198 /* NMHTTPRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMHTTPRequestSerializer.m; sourceTree = "<group>"; };
+		8E4632121F529B4500947198 /* NMJSONResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMJSONResponseSerializer.h; sourceTree = "<group>"; };
+		8E4632131F529B4500947198 /* NMJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMJSONResponseSerializer.m; sourceTree = "<group>"; };
+		8E4632141F529B4500947198 /* NMNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMNetworkManager.h; sourceTree = "<group>"; };
+		8E4632151F529B4500947198 /* NMNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMNetworkManager.m; sourceTree = "<group>"; };
+		8E4632191F529D3800947198 /* WLLoginApplyAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLLoginApplyAPI.h; sourceTree = "<group>"; };
+		8E46321C1F52BE3000947198 /* WLForgetPWDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLForgetPWDViewController.xib; sourceTree = "<group>"; };
+		8E4632221F52C12000947198 /* WLForgetPWDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLForgetPWDViewController.h; sourceTree = "<group>"; };
+		8E4632231F52C12000947198 /* WLForgetPWDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLForgetPWDViewController.m; sourceTree = "<group>"; };
 		8E63A1421F26F38F00430A1A /* WLCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCardController.h; sourceTree = "<group>"; };
 		8E63A1431F26F38F00430A1A /* WLCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCardController.m; sourceTree = "<group>"; };
 		8E63A1441F26F38F00430A1A /* WLCardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLCardController.xib; sourceTree = "<group>"; };
@@ -455,6 +467,7 @@
 		8E1840B61F22FCB20005A719 /* WisdomLife */ = {
 			isa = PBXGroup;
 			children = (
+				8E46320E1F528D8A00947198 /* APPDelegate */,
 				8E1840CE1F22FD630005A719 /* APIs */,
 				8E1840D71F22FD630005A719 /* APPConfigure */,
 				8E1840DA1F22FD630005A719 /* APPContext */,
@@ -463,15 +476,7 @@
 				8E18426D1F22FD630005A719 /* Helper */,
 				8E1842EA1F22FD640005A719 /* Macros */,
 				8E1842EF1F22FD640005A719 /* ThirdParty */,
-				8E1840BA1F22FCB20005A719 /* AppDelegate.h */,
-				8E1840BB1F22FCB20005A719 /* AppDelegate.m */,
-				8E1840BD1F22FCB20005A719 /* ViewController.h */,
-				8E1840BE1F22FCB20005A719 /* ViewController.m */,
-				8E1840C31F22FCB20005A719 /* Assets.xcassets */,
-				8E1840C51F22FCB20005A719 /* LaunchScreen.storyboard */,
-				8E1840C81F22FCB20005A719 /* Info.plist */,
 				8E1840B71F22FCB20005A719 /* Supporting Files */,
-				8E1843CA1F22FEB30005A719 /* WisdomLifePCH.pch */,
 			);
 			path = WisdomLife;
 			sourceTree = "<group>";
@@ -479,7 +484,11 @@
 		8E1840B71F22FCB20005A719 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8E1840C31F22FCB20005A719 /* Assets.xcassets */,
+				8E1840C51F22FCB20005A719 /* LaunchScreen.storyboard */,
+				8E1840C81F22FCB20005A719 /* Info.plist */,
 				8E1840B81F22FCB20005A719 /* main.m */,
+				8E1843CA1F22FEB30005A719 /* WisdomLifePCH.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -488,6 +497,7 @@
 			isa = PBXGroup;
 			children = (
 				8E1843D21F2306E40005A719 /* WLAPIS.h */,
+				8E4632191F529D3800947198 /* WLLoginApplyAPI.h */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -778,6 +788,7 @@
 		8E18426D1F22FD630005A719 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				8E46320F1F529B4500947198 /* NMNetworkManager */,
 				8E1842741F22FD640005A719 /* NMAdjustPositionButton */,
 				8E18428E1F22FD640005A719 /* NMCrashHandler */,
 				8E1842A21F22FD640005A719 /* NMEmptyDataDataSource */,
@@ -994,6 +1005,28 @@
 			path = "引导页";
 			sourceTree = "<group>";
 		};
+		8E46320E1F528D8A00947198 /* APPDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8E1840BA1F22FCB20005A719 /* AppDelegate.h */,
+				8E1840BB1F22FCB20005A719 /* AppDelegate.m */,
+			);
+			path = APPDelegate;
+			sourceTree = "<group>";
+		};
+		8E46320F1F529B4500947198 /* NMNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				8E4632101F529B4500947198 /* NMHTTPRequestSerializer.h */,
+				8E4632111F529B4500947198 /* NMHTTPRequestSerializer.m */,
+				8E4632121F529B4500947198 /* NMJSONResponseSerializer.h */,
+				8E4632131F529B4500947198 /* NMJSONResponseSerializer.m */,
+				8E4632141F529B4500947198 /* NMNetworkManager.h */,
+				8E4632151F529B4500947198 /* NMNetworkManager.m */,
+			);
+			path = NMNetworkManager;
+			sourceTree = "<group>";
+		};
 		8E8C468C1F25CD9E0053AB43 /* 个人资料 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1064,6 +1097,8 @@
 		8EB581121F2493BD0097E34B /* 登录 */ = {
 			isa = PBXGroup;
 			children = (
+				8E4632221F52C12000947198 /* WLForgetPWDViewController.h */,
+				8E4632231F52C12000947198 /* WLForgetPWDViewController.m */,
 				8EB581141F2494110097E34B /* WLLoginViewController.h */,
 				8EB581151F2494110097E34B /* WLLoginViewController.m */,
 				8EBB89271F2AF2E300B46B52 /* WLLoginViewController.xib */,
@@ -1073,6 +1108,7 @@
 				8EC529411F2F829D005A3591 /* WLLoginView.h */,
 				8EC529421F2F829D005A3591 /* WLLoginView.m */,
 				8EC529441F2F82A9005A3591 /* WLLoginView.xib */,
+				8E46321C1F52BE3000947198 /* WLForgetPWDViewController.xib */,
 			);
 			path = "登录";
 			sourceTree = "<group>";
@@ -1163,6 +1199,7 @@
 				8ECC87A61F4834B900ADA608 /* WLMessageForDetailsViewController.xib in Resources */,
 				8EBB892D1F2B302100B46B52 /* WLRegisteredViewController.xib in Resources */,
 				8EBB89281F2AF2E300B46B52 /* WLLoginViewController.xib in Resources */,
+				8E46321E1F52BE3000947198 /* WLForgetPWDViewController.xib in Resources */,
 				8EC529451F2F82A9005A3591 /* WLLoginView.xib in Resources */,
 				8E119FE01F39B47100647C20 /* WLNearbyViewController.xib in Resources */,
 				8E63A1461F26F38F00430A1A /* WLCardController.xib in Resources */,
@@ -1229,7 +1266,6 @@
 				8E1843E91F2313B60005A719 /* WLCollectionViewController.m in Sources */,
 				8E1843C61F22FD640005A719 /* NMViewRefreshStatusManager.m in Sources */,
 				8E1842F41F22FD640005A719 /* NSDictionary+Addition.m in Sources */,
-				8E1840BF1F22FCB20005A719 /* ViewController.m in Sources */,
 				8E1843A71F22FD640005A719 /* NSMutableAttributedString+NSRangeException.m in Sources */,
 				8E18430C1F22FD640005A719 /* UILabel+Addition.m in Sources */,
 				8EBB892C1F2B302100B46B52 /* WLRegisteredViewController.m in Sources */,
@@ -1288,6 +1324,7 @@
 				8E18430A1F22FD640005A719 /* NMtextField.m in Sources */,
 				8E1843B11F22FD640005A719 /* NMGCDTimerManager.m in Sources */,
 				8E1842F91F22FD640005A719 /* NSAttributedString+Size.m in Sources */,
+				8E4632171F529B4500947198 /* NMJSONResponseSerializer.m in Sources */,
 				8E1842F81F22FD640005A719 /* NSObject+Runtime.m in Sources */,
 				8E1843C31F22FD640005A719 /* NMUserInfoManager.m in Sources */,
 				8E119FD61F39AAB100647C20 /* WLMessageCenterViewController.m in Sources */,
@@ -1302,6 +1339,7 @@
 				8E2FC7C21F28A05D0081CD81 /* WLMyOrderViewController.m in Sources */,
 				8E1840BC1F22FCB20005A719 /* AppDelegate.m in Sources */,
 				8E1843AC1F22FD640005A719 /* UINavigationController+Consistent.m in Sources */,
+				8E4632181F529B4500947198 /* NMNetworkManager.m in Sources */,
 				8E1843191F22FD640005A719 /* NMTabBarVC.m in Sources */,
 				8ECC87A51F4834B900ADA608 /* WLMessageForDetailsViewController.m in Sources */,
 				8E1843EC1F2314F60005A719 /* WLCollectionViewCell.m in Sources */,
@@ -1315,11 +1353,13 @@
 				8E1843041F22FD640005A719 /* UIImageView+Addition.m in Sources */,
 				8E63A1451F26F38F00430A1A /* WLCardController.m in Sources */,
 				8E1843141F22FD640005A719 /* NMBaseStore.m in Sources */,
+				8E4632161F529B4500947198 /* NMHTTPRequestSerializer.m in Sources */,
 				8E1840B91F22FCB20005A719 /* main.m in Sources */,
 				8E1842FF1F22FD640005A719 /* UIBarButtonItem+Category.m in Sources */,
 				8E2FC7BB1F284D8D0081CD81 /* WLMyWalletViewCell.m in Sources */,
 				8E2FC7B81F2849DC0081CD81 /* WLShoppingCarViewCell.m in Sources */,
 				8E1843A81F22FD640005A719 /* NSMutableString+NSRangeException.m in Sources */,
+				8E4632241F52C12000947198 /* WLForgetPWDViewController.m in Sources */,
 				8E1842FC1F22FD640005A719 /* NSString+Extension.m in Sources */,
 				8EB5811B1F24EFD40097E34B /* WLMineCellModel.m in Sources */,
 				8E1843161F22FD640005A719 /* NMBaseViewModel.m in Sources */,

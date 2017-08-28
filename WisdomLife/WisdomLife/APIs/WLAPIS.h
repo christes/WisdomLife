@@ -11,4 +11,7 @@
 //拼接URL
 #define WL_API_JOIN_URL(_api) [[[NSUserDefaults standardUserDefaults] objectForKey:kNMAPIDOMAIN] stringByAppendingString:_api]
 
+#import "WLLoginApplyAPI.h"
+
+
 #endif /* WLAPIS_h */

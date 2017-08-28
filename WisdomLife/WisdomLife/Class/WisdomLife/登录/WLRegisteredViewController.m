@@ -8,6 +8,9 @@
 
 #import "WLRegisteredViewController.h"
 #import "WLLoginViewController.h"
+#import "NMTabBarVC.h"
+#import "NMUserInfoManager.h"
+#import "WLUserInfoModel.h"
 @interface WLRegisteredViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *account;
 @property (strong, nonatomic) IBOutlet UITextField *VerificationCode;
@@ -40,6 +43,57 @@
     [self presentViewController:[WLLoginViewController new] animated:YES completion:^{
         
     }];
+}
+
+// 获取验证码
+- (void)getCode{
+    [[NMNetworkManager defaultManager] postWithUrlString:WL_API_APPLY_GETCODE
+                                            inParameters:@{@"moblNo": _account.text,
+                                                           @"type": @"insert"}
+                                                finished:^(NSURLResponse *response,
+                                                           id responseObject,
+                                                           NSError *error) {
+                                                    NSLog(@"%@",response);
+                                                }];
+}
+
+// 校验验证码
+- (IBAction)applyAccount:(id)sender {
+    [[NMNetworkManager defaultManager] postWithUrlString:WL_API_APPLY_CHECKCODE
+                                            inParameters:@{@"checkCode" : _VerificationCode.text,
+                                                           @"moblNo" : _account.text}
+                                                finished:^(NSURLResponse *response,
+                                                           id responseObject,
+                                                           NSError *error) {
+                                                    if (error == nil) {
+                                                        [self addUser];
+                                                    }
+                                                }];
+}
+
+// 注册
+- (void)addUser{
+    
+    NSDictionary *prameters = @{@"moblNo" : _account.text,
+                                @"passWord" : _pwd.text,
+                                @"source" : @"iOS"};
+    
+    NSString *jsonString = [NSString jsonWithObject:prameters];
+    [[NMNetworkManager defaultManager] postWithUrlString:WL_API_APPLY_ADDUSER
+                                            inParameters:@{@"userInfo" : jsonString}
+                                                finished:^(NSURLResponse *response,
+                                                           id responseObject,
+                                                           NSError *error) {
+                                                    WLLog(@"%@",responseObject);
+                                                    WLUserInfoModel *model = [WLUserInfoModel modelWithDictionary:responseObject[@"out"]];
+                                                    [[NMUserInfoManager sharedManager] didLoginInWithUserInfo:model];
+                                                    [self dismissViewControllerAnimated:NO completion:nil];
+                                                    [self dismissViewControllerAnimated:NO completion:nil];
+                                                }];
+}
+
+// 登录
+- (IBAction)loginClick:(id)sender {
 }
 
 - (void)setInterface{
@@ -100,6 +154,7 @@
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setBackgroundImage:[UIImage imageNamed:@"button_small"] forState:UIControlStateNormal];
         [button setTitle:@"获取验证码" forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(getCode) forControlEvents:UIControlEventTouchUpInside];
         button.titleLabel.font = WL_FONT(15);
         [_VerificationCodeRightview addSubview:button];
         button.frame = CGRectMake(5, 0, 90, 31);

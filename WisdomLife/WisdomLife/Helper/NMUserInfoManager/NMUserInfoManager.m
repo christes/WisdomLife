@@ -23,7 +23,7 @@ static  NMUserInfoManager *_singleton = nil;
 }
 
 // 当前用户信息
-- (NMUserInfoModel *)currentUserInfo {
+- (WLUserInfoModel *)currentUserInfo {
     
     id obj = [NMFileCacheManager getObjectByFileName:NSStringFromClass([WLUserInfoModel class])];
     if (obj != nil) {

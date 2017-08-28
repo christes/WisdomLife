@@ -49,4 +49,7 @@
 
 /** 是否包含表情 */
 - (BOOL)isContainsEmoji;
+
+/** object To json */
++ (NSString *)jsonWithObject:(id)object;
 @end
