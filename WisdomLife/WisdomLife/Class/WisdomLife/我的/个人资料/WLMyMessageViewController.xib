@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,25 +18,24 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp7-Qp-VW2">
-                    <rect key="frame" x="10" y="290" width="355" height="45"/>
+                    <rect key="frame" x="10" y="290" width="300" height="45"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="355" id="jZ2-rg-tIL"/>
                         <constraint firstAttribute="height" constant="45" id="kmu-QV-p28"/>
                     </constraints>
                     <state key="normal" title="退出当前帐号" backgroundImage="button"/>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baseboard" translatesAutoresizingMaskIntoConstraints="NO" id="0Wh-0H-dUl">
-                    <rect key="frame" x="10" y="10" width="355" height="210"/>
+                    <rect key="frame" x="10" y="10" width="300" height="210"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="210" id="npy-pd-n9S"/>
                     </constraints>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HiR-Ej-igW">
-                    <rect key="frame" x="10" y="10" width="355" height="240"/>
+                    <rect key="frame" x="10" y="10" width="300" height="240"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="240" id="naa-Qd-465"/>
@@ -54,9 +53,11 @@
                 <constraint firstItem="HiR-Ej-igW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="DSd-sw-LJ7"/>
                 <constraint firstItem="0Wh-0H-dUl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="Gse-EO-VJs"/>
                 <constraint firstAttribute="trailing" secondItem="HiR-Ej-igW" secondAttribute="trailing" constant="10" id="Hl1-uL-0PM"/>
+                <constraint firstAttribute="trailing" secondItem="Gp7-Qp-VW2" secondAttribute="trailing" constant="10" id="JTQ-00-U5i"/>
                 <constraint firstItem="HiR-Ej-igW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="SMY-TT-oNB"/>
                 <constraint firstAttribute="trailing" secondItem="0Wh-0H-dUl" secondAttribute="trailing" constant="10" id="ZXq-38-h5u"/>
                 <constraint firstItem="Gp7-Qp-VW2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ohq-Eh-T2e"/>
+                <constraint firstItem="Gp7-Qp-VW2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="qoV-NJ-rS8"/>
             </constraints>
             <point key="canvasLocation" x="35.5" y="53.5"/>
         </view>

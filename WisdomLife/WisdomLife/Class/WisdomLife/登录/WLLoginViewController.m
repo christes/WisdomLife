@@ -32,7 +32,6 @@
 }
 - (void)setInterface{
      /** 设置leftview */
-    [_account becomeFirstResponder];
     
     UIImageView *imageV =[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mobile_phonelogin"]];
     UIView *view = [[UIView alloc] init];
@@ -108,5 +107,12 @@
     
     
 }
+
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
 
 @end

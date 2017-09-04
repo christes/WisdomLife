@@ -18,6 +18,7 @@
 @implementation NMAPPConfigure
 
 + (UIViewController *)getRootViewController {
+    
     BOOL isNewVersion = [WLAppIsNewVersionTool appIsNewVersion];
     if (isNewVersion) {
         WLCollectionViewController *newFeature = [WLCollectionViewController new];

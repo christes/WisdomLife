@@ -8,7 +8,7 @@
 
 #ifndef NMMacros_h
 #define NMMacros_h
-
+#import "WLAutoCodingMacros.h"
 
 
 //----------------------ABOUT SCREEN & SIZE  ----------------------------

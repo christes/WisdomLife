@@ -27,7 +27,8 @@
 @property (nonatomic ,strong)UIView *VerificationCodeRightview;
 /** 密码的左边视图 */
 @property (nonatomic ,strong)UIView *pwdLeftciew;
-
+/** 获取验证码 */
+@property (nonatomic ,strong)UILabel *getverificationCode;
 @end
 
 @implementation WLRegisteredViewController
@@ -36,36 +37,45 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self setInterface];
-  
-    [_account becomeFirstResponder];
-}
-- (IBAction)didLogin:(id)sender {
-    [self presentViewController:[WLLoginViewController new] animated:YES completion:^{
-        
+    
+    WL_WEAKSELF
+    [self.getverificationCode setTapActionWithBlock:^{
+        WL_STRONGSELF
+        [self getCode];
     }];
-}
 
+}
 // 获取验证码
 - (void)getCode{
+    if (![_account.text isValidMobileNumber]) {
+        [NMHUDManager showInfoWithText:@"请输入正确的手机号" dismissDelay:kHUDDismissDelay];
+    }
+    
     [[NMNetworkManager defaultManager] postWithUrlString:WL_API_APPLY_GETCODE
                                             inParameters:@{@"moblNo": _account.text,
                                                            @"type": @"insert"}
                                                 finished:^(NSURLResponse *response,
                                                            id responseObject,
                                                            NSError *error) {
-                                                    NSLog(@"%@",response);
+                                                    if ([responseObject[@"status"] isEqual:@200]) {
+                                                        [NMHUDManager showWithView:self.view text:@"发送成功"];
+                                                         [self.getverificationCode startWithTime:59 title:@"获取验证码" countDownTitle:@"s" mainColor:[UIColor whiteColor] countColor:[UIColor lightGrayColor]];
+                                                    }
                                                 }];
 }
 
 // 校验验证码
-- (IBAction)applyAccount:(id)sender {
+- (IBAction)applyAccount:(id)sender{
+    if (_VerificationCode.text.length == 0) {
+        [NMHUDManager showInfoWithText:@"请输入正确的验证码" dismissDelay:kHUDDismissDelay];
+    }
     [[NMNetworkManager defaultManager] postWithUrlString:WL_API_APPLY_CHECKCODE
                                             inParameters:@{@"checkCode" : _VerificationCode.text,
                                                            @"moblNo" : _account.text}
                                                 finished:^(NSURLResponse *response,
                                                            id responseObject,
                                                            NSError *error) {
-                                                    if (error == nil) {
+                                                    if ([responseObject[@"status"] isEqual:@200]) {
                                                         [self addUser];
                                                     }
                                                 }];
@@ -73,6 +83,13 @@
 
 // 注册
 - (void)addUser{
+    if (![_account.text isValidMobileNumber]) {
+        [NMHUDManager showInfoWithText:@"请输入正确的手机号" dismissDelay:kHUDDismissDelay];
+    } else if (_pwd.text.length < 6){
+        [NMHUDManager showInfoWithText:@"请输入6位数以上的密码" dismissDelay:kHUDDismissDelay];
+    }
+    
+    
     
     NSDictionary *prameters = @{@"moblNo" : _account.text,
                                 @"passWord" : _pwd.text,
@@ -94,7 +111,16 @@
 
 // 登录
 - (IBAction)loginClick:(id)sender {
+    
+    [self presentViewController:[WLLoginViewController new] animated:YES completion:^{}];
 }
+
+
+- (IBAction)protoclAction:(UIButton *)sender {
+    sender.selected = !sender.selected;
+}
+
+
 
 - (void)setInterface{
     /** 设置leftview */
@@ -114,6 +140,16 @@
     _login.titleLabel.textColor = WL_COLOR_THEME;
     _readAngAgree.textColor = WL_COLOR_SUBTITLE;
 }
+
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
+
+
+
 #pragma mark lazy load
 -(UIView *)accountLeftview{
     if (!_accountLeftview) {
@@ -153,15 +189,24 @@
         _VerificationCodeRightview.size = CGSizeMake(100, 31);
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setBackgroundImage:[UIImage imageNamed:@"button_small"] forState:UIControlStateNormal];
-        [button setTitle:@"获取验证码" forState:UIControlStateNormal];
-        [button addTarget:self action:@selector(getCode) forControlEvents:UIControlEventTouchUpInside];
-        button.titleLabel.font = WL_FONT(15);
         [_VerificationCodeRightview addSubview:button];
+        [_VerificationCodeRightview addSubview:self.getverificationCode];
         button.frame = CGRectMake(5, 0, 90, 31);
-        WLLog(@"%@,%@",NSStringFromCGPoint(_VerificationCodeRightview.center),NSStringFromCGPoint(button.center));
     }
     
     return _VerificationCodeRightview;
+}
+
+- (UILabel *)getverificationCode{
+    if (!_getverificationCode) {
+        _getverificationCode = [[UILabel alloc] init];
+        _getverificationCode.font = WL_FONT(13);
+        _getverificationCode.text = @"获取验证码";
+        _getverificationCode.textAlignment = NSTextAlignmentCenter;
+        _getverificationCode.textColor = [UIColor whiteColor];
+        _getverificationCode.frame = CGRectMake(5, 0, 90, 31);
+    }
+    return _getverificationCode;
 }
 
 @end

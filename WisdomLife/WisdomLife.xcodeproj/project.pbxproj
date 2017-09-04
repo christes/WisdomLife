@@ -324,6 +324,7 @@
 		8E46321C1F52BE3000947198 /* WLForgetPWDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLForgetPWDViewController.xib; sourceTree = "<group>"; };
 		8E4632221F52C12000947198 /* WLForgetPWDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLForgetPWDViewController.h; sourceTree = "<group>"; };
 		8E4632231F52C12000947198 /* WLForgetPWDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLForgetPWDViewController.m; sourceTree = "<group>"; };
+		8E4632251F53AF2500947198 /* WLAutoCodingMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAutoCodingMacros.h; sourceTree = "<group>"; };
 		8E63A1421F26F38F00430A1A /* WLCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCardController.h; sourceTree = "<group>"; };
 		8E63A1431F26F38F00430A1A /* WLCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCardController.m; sourceTree = "<group>"; };
 		8E63A1441F26F38F00430A1A /* WLCardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLCardController.xib; sourceTree = "<group>"; };
@@ -924,6 +925,7 @@
 				8E1842EC1F22FD640005A719 /* NMConst.m */,
 				8E1842ED1F22FD640005A719 /* NMEnum.h */,
 				8E1842EE1F22FD640005A719 /* NMMacros.h */,
+				8E4632251F53AF2500947198 /* WLAutoCodingMacros.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";

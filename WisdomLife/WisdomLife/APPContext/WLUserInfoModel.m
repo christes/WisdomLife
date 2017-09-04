@@ -7,7 +7,7 @@
 //
 
 #import "WLUserInfoModel.h"
-
+#import <objc/runtime.h>
 @implementation WLUserInfoModel
-
+WLAUTOCODING()
 @end

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,29 +20,29 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_baseboard" translatesAutoresizingMaskIntoConstraints="NO" id="Dwg-ye-8Lf">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyh-ZH-NzP">
-                    <rect key="frame" x="166.5" y="175" width="42" height="21"/>
+                    <rect key="frame" x="139" y="175" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_iamend" translatesAutoresizingMaskIntoConstraints="NO" id="Xef-LC-QqN">
-                    <rect key="frame" x="217.5" y="175" width="20" height="20"/>
+                    <rect key="frame" x="190" y="175" width="20" height="20"/>
                 </imageView>
                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_ibaseboard_02" translatesAutoresizingMaskIntoConstraints="NO" id="xhN-92-FmX">
-                    <rect key="frame" x="20" y="240" width="335" height="300"/>
+                    <rect key="frame" x="20" y="240" width="280" height="300"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="300" id="QGb-gU-Ump"/>
                     </constraints>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fbz-XL-wRZ">
-                    <rect key="frame" x="20" y="240" width="335" height="300"/>
+                    <rect key="frame" x="20" y="240" width="280" height="300"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="300" id="W6Z-MF-gZO"/>
@@ -54,7 +54,7 @@
                     </connections>
                 </tableView>
                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_ihead_portrait" translatesAutoresizingMaskIntoConstraints="NO" id="ZjQ-vO-kRs">
-                    <rect key="frame" x="152" y="50" width="70" height="70"/>
+                    <rect key="frame" x="125" y="50" width="70" height="70"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="70" id="0ei-dv-hIv"/>
                         <constraint firstAttribute="width" constant="70" id="T9g-EM-3Ca"/>

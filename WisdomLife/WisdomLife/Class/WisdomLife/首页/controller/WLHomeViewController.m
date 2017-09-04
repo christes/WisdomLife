@@ -12,7 +12,7 @@
 #import "WLBigModel.h"
 #import "WLShowView.h"
 #import "WLMessageCenterViewController.h"
-
+#import "WLLoginViewController.h"
 @interface WLHomeViewController ()
 /**  */
 @property (nonatomic ,strong)UIImageView *backgroungImageV;
@@ -37,8 +37,19 @@
     
     [self addBtn];
     [self addConnectImage];
- 
+    [self handleUserLoginStatus];
 }
+
+#pragma mark - - Login Status
+- (void)handleUserLoginStatus{
+    if ([[NMUserInfoManager sharedManager] currentUserInfo] == nil) {
+        [self presentViewController:[WLLoginViewController new] animated:YES completion:nil];
+    } else{
+        
+    }
+}
+
+
 #pragma mark lazy load
 -(NSArray<WLBigModel *> *)modelArray{
     if (!_modelArray) {
