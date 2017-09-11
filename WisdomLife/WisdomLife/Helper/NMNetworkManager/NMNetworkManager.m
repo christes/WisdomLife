@@ -11,6 +11,7 @@
 #import "NMJSONResponseSerializer.h"
 #import "NMHTTPRequestSerializer.h"
 #import "NMErrorCode.h"
+#import "NMUserInfoManager.h"
 @interface NMNetworkManager ()
 /**
  任务组字典
@@ -76,6 +77,7 @@
             [inParameters setObject:obj forKey:[NSString stringWithFormat:@"%@",key]];
         }
     }];
+    [inParameters setObject:[NMUserInfoManager sharedManager].userJson forKey:@"in[userProfile]"];
     return [self postWithUrlString:url timeoutInterval:40 parameters:[inParameters copy] finished:finished];
 }
 

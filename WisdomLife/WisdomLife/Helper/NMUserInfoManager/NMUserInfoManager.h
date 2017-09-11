@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class WLUserInfoModel;
+#import "WLUserInfoModel.h"
 @interface NMUserInfoManager : NSObject
 + (instancetype)sharedManager;
 
@@ -36,7 +36,17 @@
  */
 @property (nonatomic, assign) BOOL isLogin;
 
+/** 手机号 */
+@property (nonatomic ,strong)NSString *phoneNum;
 
+/** 手机号 */
+@property (nonatomic ,strong)NSString *phoneSecretNum;
+
+/** 用户昵称 */
+@property (nonatomic ,strong)NSString *userName;
+
+/**  */
+@property (nonatomic ,strong)id userJson;
 /**
  *  用户激活状态
  */

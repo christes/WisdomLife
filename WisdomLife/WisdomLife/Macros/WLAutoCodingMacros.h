@@ -42,7 +42,6 @@ return self;    \
 \
 - (void)encodeWithCoder:(NSCoder *)coder    \
 {   \
-NSLog(@"%s",__func__);  \
 Class cls = [self class];   \
 while (cls != [NSObject class]) {   \
 /*判断是自身类还是父类*/    \

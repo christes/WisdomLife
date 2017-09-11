@@ -68,11 +68,18 @@
     } ];
 }
 #pragma  mark setmodel
--(void)setModel:(WLMyMessegeModel *)model{
+- (void)setModel:(WLMyMessegeModel *)model{
     _model = model;
     _title.text = model.titleLable;
     _imageV.image = [UIImage imageNamed:model.imageName];
     _subTitle.text = model.subtitleLable;
+    
+    
+    if ([model.titleLable isEqualToString:@"手机号码"] || model.imageName.length) {
+        _accessoryImageView.hidden = YES;
+    } else{
+        _accessoryImageView.hidden = NO;
+    }
 }
 #pragma  mark lazy load
 -(UILabel *)title{

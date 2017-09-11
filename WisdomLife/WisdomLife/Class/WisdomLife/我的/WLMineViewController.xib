@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLMineViewController">
             <connections>
-                <outlet property="edit" destination="Xef-LC-QqN" id="dMJ-wd-BEJ"/>
                 <outlet property="mine" destination="fbz-XL-wRZ" id="sd0-e9-jum"/>
                 <outlet property="phoneNum" destination="tyh-ZH-NzP" id="Mxv-gg-ivf"/>
                 <outlet property="photo" destination="ZjQ-vO-kRs" id="a8B-fu-AZC"/>
@@ -29,12 +28,9 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyh-ZH-NzP">
                     <rect key="frame" x="139" y="175" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.69803921568627447" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_iamend" translatesAutoresizingMaskIntoConstraints="NO" id="Xef-LC-QqN">
-                    <rect key="frame" x="190" y="175" width="20" height="20"/>
-                </imageView>
                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_ibaseboard_02" translatesAutoresizingMaskIntoConstraints="NO" id="xhN-92-FmX">
                     <rect key="frame" x="20" y="240" width="280" height="300"/>
                     <constraints>
@@ -72,20 +68,17 @@
                 <constraint firstAttribute="trailing" secondItem="xhN-92-FmX" secondAttribute="trailing" constant="20" id="Iw3-XL-nM6"/>
                 <constraint firstItem="xhN-92-FmX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="JVh-hg-3OP"/>
                 <constraint firstItem="tyh-ZH-NzP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PgM-XM-odp"/>
-                <constraint firstItem="Xef-LC-QqN" firstAttribute="leading" secondItem="tyh-ZH-NzP" secondAttribute="trailing" constant="9" id="Zo0-bR-OHu"/>
                 <constraint firstItem="Dwg-ye-8Lf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dSa-iR-kZN"/>
                 <constraint firstItem="ZjQ-vO-kRs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="fLu-zn-ipN"/>
                 <constraint firstItem="Dwg-ye-8Lf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ghk-xd-p3a"/>
                 <constraint firstItem="tyh-ZH-NzP" firstAttribute="top" secondItem="ZjQ-vO-kRs" secondAttribute="bottom" constant="55" id="j5m-DL-gHe"/>
                 <constraint firstItem="ZjQ-vO-kRs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jgU-m4-7ts"/>
-                <constraint firstItem="Xef-LC-QqN" firstAttribute="top" secondItem="tyh-ZH-NzP" secondAttribute="top" id="ykT-3X-RjV"/>
             </constraints>
             <point key="canvasLocation" x="35.5" y="161.5"/>
         </view>
     </objects>
     <resources>
         <image name="mine_baseboard" width="375" height="554"/>
-        <image name="mine_iamend" width="20" height="20"/>
         <image name="mine_ibaseboard_02" width="347" height="312"/>
         <image name="mine_ihead_portrait" width="69" height="69"/>
     </resources>

@@ -9,7 +9,8 @@
 #import "WLMyMessageViewController.h"
 #import "WLMyMessegeModel.h"
 #import "WLMyMessegeViewCell.h"
-
+#import "WLForgetPWDViewController.h"
+#import "WLMeModfiyNameViewController.h"
 @interface WLMyMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UIButton *outLoginBtn;
 @property (strong, nonatomic) IBOutlet UITableView *myMessege;
@@ -46,10 +47,13 @@
     cell.model = self.modelArray[indexPath.row];
     return cell;
 }
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-
-
+    if (indexPath.row == 1) {
+        [self.navigationController pushViewController:[WLMeModfiyNameViewController new] animated:YES];
+    } else if (indexPath.row == 3){
+        [self.navigationController pushViewController:[WLForgetPWDViewController new] animated:YES];
+    }
 }
 
 #pragma mark lazy load
@@ -58,10 +62,10 @@
         NSArray *array = @[@{@"titleLable":@"头像",
                              @"imageName":@"head_portrait"},
                            @{@"titleLable":@"昵称",
-                             @"subtitleLable":@"王晓明",
+                             @"subtitleLable":[NMUserInfoManager sharedManager].userName,
                              },
                            @{@"titleLable":@"手机号码",
-                             @"subtitleLable":@"12344",
+                             @"subtitleLable":[NMUserInfoManager sharedManager].phoneSecretNum,
                              },
                            @{@"titleLable":@"密码",
                              @"subtitleLable":@"修改",

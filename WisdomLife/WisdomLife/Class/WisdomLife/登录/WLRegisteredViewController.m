@@ -71,7 +71,8 @@
     }
     [[NMNetworkManager defaultManager] postWithUrlString:WL_API_APPLY_CHECKCODE
                                             inParameters:@{@"checkCode" : _VerificationCode.text,
-                                                           @"moblNo" : _account.text}
+                                                           @"moblNo" : _account.text,
+                                                           @"captchaType" : @"31411001"}
                                                 finished:^(NSURLResponse *response,
                                                            id responseObject,
                                                            NSError *error) {

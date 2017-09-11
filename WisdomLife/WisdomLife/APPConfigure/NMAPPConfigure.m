@@ -12,6 +12,7 @@
 #import "WLAppIsNewVersionTool.h"
 #import "WLCollectionViewController.h"
 #import "WLLoginViewController.h"
+#import "WLUserInfoModel.h"
 @interface NMAPPConfigure ()
 @end
 
@@ -33,10 +34,38 @@
         };
         return newFeature;
     }else{
-        return [NMTabBarVC new];
+        return [self loginAction];
     }
 }
 
+#pragma mark - - 登录操作
++ (UIViewController *)loginAction{
+    WLUserInfoModel *model = [[NMUserInfoManager sharedManager] currentUserInfo];
+    if (![model.moblNo isValidMobileNumber] || model.pwd.length < 5) {
+        return [WLLoginViewController new];
+    } else{
+        [NMHUDManager showWithText:kNMHUDDefaultText];
+        [[NMNetworkManager defaultManager] postWithUrlString:WL_API_APPLY_Login
+                                                inParameters:@{@"moblNo" : model.moblNo,
+                                                               @"password" : model.pwd}
+                                                    finished:^(NSURLResponse *response,
+                                                               id responseObject,
+                                                               NSError *error)
+         {
+             [NMHUDManager dismiss];
+             if ([responseObject[@"status"] isEqual:@200]) {
+                 [NMHUDManager showSuccessWithText:@"登录成功" dismissDelay:kHUDDismissDelay];
+                 WLUserInfoModel *model = [WLUserInfoModel modelWithDictionary:responseObject[@"out"][@"value"]];
+                 model.pwd = model.pwd;
+                 [[NMUserInfoManager sharedManager] didLoginInWithUserInfo:model];
+             } else{
+                 [UIApplication sharedApplication].keyWindow.rootViewController = [WLLoginViewController new];
+             }
+         }];
+        return [NMTabBarVC new];
+    }
+    
+}
 
 + (void)configureAPIDOMAIN{
     if ([NMFileCacheManager readUserDataForKey:kNMAPIDOMAIN] == nil) {

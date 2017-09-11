@@ -8,7 +8,6 @@
 
 #import "NMUserInfoManager.h"
 #import "NMFileCacheManager.h"
-#import "WLUserInfoModel.h"
 @implementation NMUserInfoManager
 
 
@@ -35,29 +34,58 @@ static  NMUserInfoManager *_singleton = nil;
 // 重置用户信息
 - (void)resetUserInfoWithUserInfo:(WLUserInfoModel *)userInfo {
     [userInfo archive];
-    [[NSNotificationCenter defaultCenter] postNotificationName:kNMHomeViewNeedRefresh object:[NSNumber numberWithInteger:NMHomeNotificationTypeLogin]];
 }
 
 // 登陆
 - (void)didLoginInWithUserInfo:(WLUserInfoModel *)userInfo {
     [userInfo archive];
-    [[NSNotificationCenter defaultCenter] postNotificationName:kNMHomeViewNeedRefresh object:[NSNumber numberWithInteger:NMHomeNotificationTypeLogin]];
+    
 }
 
 // 退出登陆
 - (void)didLoginOut {
     [NMFileCacheManager removeObjectByFileName:NSStringFromClass([WLUserInfoModel class])];
-    [NMFileCacheManager removeUserDataForkey:kNMAPPContextAccessToken];
-    [NMFileCacheManager removeUserDataForkey:kNMAPPContextPhoneNumber];
-    [[NSNotificationCenter defaultCenter] postNotificationName:kNMHomeViewNeedRefresh object:[NSNumber numberWithInteger:NMHomeNotificationTypeLogin]];
 }
 
 // 判断是否是登陆状态
 - (BOOL)isLogin {
-    NSString *accessToken = [NMFileCacheManager readUserDataForKey:kNMAPPContextAccessToken];
-    WLLog(@"accessToken=%@",accessToken);
-    return accessToken.length > 0;
+    WLUserInfoModel *model = [self currentUserInfo];
+    if (model.pwd.length > 0 && [model.moblNo isValidMobileNumber]) {
+        return YES;
+    } else{
+        return NO;
+    }
 }
 
+- (NSString *)phoneNum{
+    if (!_phoneNum) {
+        _phoneNum = [self currentUserInfo].moblNo;
+    }
+    return _phoneNum;
+}
+
+- (NSString *)phoneSecretNum{
+    if (!_phoneSecretNum) {
+       _phoneSecretNum = [self.phoneNum stringByReplacingCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
+    }
+    return _phoneSecretNum;
+}
+
+- (NSString *)userName{
+    if (!_userName) {
+        _userName = [self currentUserInfo].userName;
+        if (!_userName) {
+            _userName = @"请设置昵称";
+        }
+    }
+    return _userName;
+}
+
+- (id)userJson{
+    if (!_userJson) {
+        _userJson = @"";
+    }
+    return _userJson;
+}
 
 @end

@@ -27,7 +27,7 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [self getRootViewController];
+    self.window.rootViewController = [NMAPPConfigure getRootViewController];
     [NMAPPConfigure configureAPIDOMAIN];
     [self.window makeKeyAndVisible];
     return YES;
@@ -35,29 +35,6 @@
 
 
 
-/**
- 获取根控制器
- */
-- (UIViewController *)getRootViewController {
-    
-    return [WLLoginViewController new];
-    BOOL isNewVersion = [WLAppIsNewVersionTool appIsNewVersion];
-    if (isNewVersion) {
-        WLCollectionViewController *newFeature = [WLCollectionViewController new];
-        newFeature.imageArray = @[@"guide_page01",
-                                  @"guide_page02",
-                                  @"guide_page03",
-                                  @"guide_page04"];
-        newFeature.currentPageControlImage = [UIImage imageNamed:@"circle_s"];
-        newFeature.otherPageControlImage = [UIImage imageNamed:@"circle_n"];
-        newFeature.buttonClickCallBackBlock = ^(){
-            [UIApplication sharedApplication].keyWindow.rootViewController = [NMTabBarVC new];
-        };
-        return newFeature;
-    }else{
-        return [NMTabBarVC new];
-    }
-}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

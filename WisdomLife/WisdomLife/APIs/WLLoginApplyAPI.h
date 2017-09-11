@@ -18,6 +18,8 @@
 // 修改密码
 #define WL_API_APPLY_CHANGEPWD   WL_API_JOIN_URL(@"api/app/login/alterPwd")
 
+// 登录
+#define WL_API_APPLY_Login   WL_API_JOIN_URL(@"api/app/login/LoginInfo")
 
 
 #endif /* WLLoginApplyAPI_h */

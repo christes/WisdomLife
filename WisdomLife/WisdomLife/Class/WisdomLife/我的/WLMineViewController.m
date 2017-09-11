@@ -18,7 +18,6 @@
 @property (weak, nonatomic) IBOutlet UITableView *mine;
 @property (weak, nonatomic) IBOutlet UILabel *phoneNum;
 
-@property (weak, nonatomic) IBOutlet UIImageView *edit;
 /** 数组模型 */
 @property (nonatomic ,strong)NSArray <WLMineCellModel *> *modelArray;
 /** 跳转控制器数组 */
@@ -33,7 +32,8 @@
     [super viewDidLoad];
     
     self.mine.rowHeight = WL_HEIGHT(60);
-    // Do any additional setup after loading the view from its nib.
+    _phoneNum.text = [NMUserInfoManager sharedManager].phoneSecretNum;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,6 +59,7 @@
     return  cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
         UIViewController *VC = (UIViewController *)[NSClassFromString(self.controllerArray[indexPath.row]) new];
     if (indexPath.row == 2) {
         

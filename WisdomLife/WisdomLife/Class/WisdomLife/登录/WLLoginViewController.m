@@ -9,6 +9,10 @@
 #import "WLLoginViewController.h"
 #import "WLRegisteredViewController.h"
 #import "WLForgetPWDViewController.h"
+#import "NMNavigationVC.h"
+#import "NMTabBarVC.h"
+#import "NMFileCacheManager.h"
+#import "WLUserInfoModel.h"
 @interface WLLoginViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *account;
 @property (strong, nonatomic) IBOutlet UITextField *pwd;
@@ -87,25 +91,36 @@
 }
 
 - (IBAction)forgetPassWord:(id)sender {
-//    [self presentViewController:[WLForgetPWDViewController new] animated:YES completion:nil];
-    NSDictionary *parameters = @{@"moblNo" : @"18011521514",
-                                 @"passWord" : @"99999999",
-                                 @"pwd" : @"99999999",
-                                 @"type" : @"update"};
-    NSString *jsonString = [NSString jsonWithObject:parameters];
-    [[NMNetworkManager defaultManager] postWithUrlString:WL_API_APPLY_CHANGEPWD
-                                            inParameters:@{@"userInfo":jsonString}
-                                                finished:^(NSURLResponse *response,
-                                                           id responseObject,
-                                                           NSError *error) {
-                                                    
-                                                }];
-    
+    [self presentViewController:[[NMNavigationVC new]initWithRootViewController:[WLForgetPWDViewController new]] animated:YES completion:nil];
 }
 
 - (IBAction)loginClick:(id)sender {
-    
-    
+    if (![_account.text isValidMobileNumber] || _pwd.text.length < 5) {
+        [NMHUDManager showInfoWithText:@"请输入正确的手机号和密码" dismissDelay:kHUDDismissDelay];
+    }
+    [NMHUDManager showWithView:self.view text:kNMHUDDefaultText];
+    [[NMNetworkManager defaultManager] postWithUrlString:WL_API_APPLY_Login
+                                            inParameters:@{@"moblNo" : _account.text,
+                                                           @"password" : _pwd.text}
+                                                finished:^(NSURLResponse *response,
+                                                           id responseObject,
+                                                           NSError *error)
+    {
+        [NMHUDManager dismissWithView:self.view];
+        if ([responseObject[@"status"] isEqual:@200]) {
+            [NMHUDManager showSuccessWithText:@"登录成功" dismissDelay:kHUDDismissDelay];
+            WLUserInfoModel *model = [WLUserInfoModel modelWithDictionary:responseObject[@"out"][@"value"]];
+            model.pwd = _pwd.text;
+            [[NMUserInfoManager sharedManager] didLoginInWithUserInfo:model];
+            
+            NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseObject[@"out"][@"value"] options:0 error:nil];
+            NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+            [NMUserInfoManager sharedManager].userJson = jsonString;
+            
+            [UIApplication sharedApplication].keyWindow.rootViewController = [NMTabBarVC new];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }];
 }
 
 

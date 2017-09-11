@@ -22,8 +22,10 @@
     // 文字大小
     NSMutableDictionary * color = [NSMutableDictionary dictionary];
     color[NSFontAttributeName] = WL_FONT(17);
+    color[NSForegroundColorAttributeName] = [UIColor whiteColor];
     [[UINavigationBar appearance] setTitleTextAttributes:color];
     [UINavigationBar appearance].barStyle = UIBarStyleBlack;
+    [[UIBarButtonItem appearance] setTitleTextAttributes:color forState:UIControlStateNormal];
 }
 
 - (void)viewDidLoad {
