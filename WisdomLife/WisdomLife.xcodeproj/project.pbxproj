@@ -1177,7 +1177,7 @@
 				TargetAttributes = {
 					8E1840B31F22FCB20005A719 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = SWYLE86NRA;
+						DevelopmentTeam = 8DJVY2YJ73;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1499,14 +1499,14 @@
 			baseConfigurationReference = EEFC3D6877B6947FD7C7A997 /* Pods-WisdomLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SWYLE86NRA;
+				DEVELOPMENT_TEAM = 8DJVY2YJ73;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WisdomLife/WisdomLifePCH.pch;
 				INFOPLIST_FILE = WisdomLife/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ocean.WisdomLife;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ocean.wisdomlifes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1516,14 +1516,14 @@
 			baseConfigurationReference = 9F439E4AB66E337237E07458 /* Pods-WisdomLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SWYLE86NRA;
+				DEVELOPMENT_TEAM = 8DJVY2YJ73;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WisdomLife/WisdomLifePCH.pch;
 				INFOPLIST_FILE = WisdomLife/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ocean.WisdomLife;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ocean.wisdomlifes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

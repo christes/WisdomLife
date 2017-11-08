@@ -113,8 +113,7 @@
             model.pwd = _pwd.text;
             [[NMUserInfoManager sharedManager] didLoginInWithUserInfo:model];
             
-            NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseObject[@"out"][@"value"] options:0 error:nil];
-            NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+            NSString *jsonString = [NSString jsonWithObject:responseObject[@"out"][@"value"]];
             [NMUserInfoManager sharedManager].userJson = jsonString;
             
             [UIApplication sharedApplication].keyWindow.rootViewController = [NMTabBarVC new];
